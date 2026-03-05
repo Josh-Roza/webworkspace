@@ -1,0 +1,4 @@
+source ~/miniconda3/bin/activate
+conda activate dj_web
+
+source env_webproject/bin/activate

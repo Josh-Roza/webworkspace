@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to the DND Scenario Builder</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div id="navHeader">
+        <a href="{% url 'scenGen' %}">Scenario Generator</a>
+        <hr>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DND Scenario Generator</title>
+    <link rel="stylesheet" href="{% static 'css/scenGen_css.css' %}" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div id="navHeader">
+        <a href="{% url 'scenGen' %}">Scenario Generator</a>
+        <hr>
+      </div>
+      <div id="advancedButtonDiv">
+          <button id="Advanced" onclick="advancedButtonClicked()">Advanced</button>
+      </div>
+      <div id="playerNumberDiv">
+          <label for="playerNumber">Number of Players:</label>
+          <select name="playerNumber", id="playerNumber">
+              <option value="1">1</option>
+              <option value="2" selected>2</option> <!-- Default value set to 2 -->
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+          </select>
+      </div>
+      <div id="partyLvlDiv">
+          <label for="partyLvl">Party Level:</label>
+          <select name="partyLevel", id="partyLvl">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected>4</option> <!-- Default value set to 4 -->
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+          </select>
+      </div>
+      <div id="scenarioDifficultyDiv">
+          <label for="scenarioDifficulty">Scenario Difficulty:</label>
+          <select name="scenarioDifficulty", id="scenarioDifficulty">
+              <option value="Easy">Easy</option>
+              <option value="Medium" selected>Medium</option> <!-- Default value set to Medium -->
+              <option value="Hard">Hard</option>
+              <option value="TPK">TPK</option>
+          </select>
+      </div>
+      <div id="monsterPackDiv" class="monsterSelection">
+          <label for="monsterPack" class="monsterLabel">Monster Pack(s), hold ctrl/cmd to Select Multiple</label>
+          <select name="monsterPack", id="monsterPack", multiple size="13">
+              <option value="Orcs and Goblins">Orcs_and_Goblins</option>
+              <option value="Undead">Undead</option>   
+              <option value="Dragons and Friends">Dragons_and_Friends</option>
+              <option value="Giants and Ogres">Giants_and_Ogres</option>
+              <option value="Elementals">Elementals</option>
+              <option value="Beasts of Nature">Beasts_of_Nature</option>
+              <option value="Elves">Elves</option>
+              <option value="Dwarves">Dwarves</option>
+              <option value="Mages">Mages</option>
+              <option value="Demons and Devils">Demons_and_Devils</option>
+              <option value="Monters of the Skies">Monsters_of_the_Skies</option>
+              <option value="Monsters of the Seas">Monsters_of_the_Seas</option>
+              <option value="High AC">High_AC</option>
+              <option value="High HP">High_HP</option>
+              <option value="Flying Monsters">Flying_Monsters</option>
+              <option value="Mental Attacks">Mental_Attacks</option>
+          </select>
+      </div>
+      <div id="abundanceSliderDiv" class="slider">
+          <p id="bossFight" class="sliderLabel">Boss Fight</p>
+          <input type="range" id="abundanceSlider" name="abundanceSlider" min="1" max="11" value="6" class="slider">
+          <p id="horde" class="sliderLabel">Horde</p>
+      </div>
+      <div id = rangeMeleeSliderDiv class="slider">
+          <p id="melee" class="sliderLabel">Melee</p>
+          <input type="range" id="meleeRangedSlider" name="meleeRangedSlider" min="1" max="11" value="6" class="slider">
+          <p id="ranged" class="sliderLabel">Ranged</p>
+      </div>
+      <div id="generateButtonDiv">
+          <button id="generateButton" onclick="generateScenario()">Generate Scenario</button>
+      </div>
+    </div>
+  </body>
+  <script src="{% static 'js/scenGen_js.js' %}"></script>
+</html>

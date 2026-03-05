@@ -1,0 +1,119 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    --frame-size: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--frame-size);
+    background-color: rgb(202, 210, 218);
+    background-image:
+        url('../images/dndAppBorderImage.png'),
+        url('../images/dndAppBorderImage.png');
+    background-repeat: repeat-y, repeat-y;
+    background-position: left top, right top;
+    background-size:
+        var(--frame-size) var(--frame-size),
+        var(--frame-size) var(--frame-size);
+}
+
+.content-wrapper {
+    flex: 1;
+    min-height: 0;
+    box-sizing: border-box;
+    background-color: rgb(202, 210, 218);
+    padding: 5px;
+    width: 100%;
+}
+
+#generateButton {
+    font-size: 20px;
+    padding: 10px 30px;
+    padding-top: 4px;
+    padding-bottom:4px;
+}
+
+#Advanced {
+    font-size: 15px;
+    padding: 6px 15px;
+    padding-top: 2vh;
+    padding-bottom:2vh;
+}
+
+button:hover {
+    background-color: rgba(73, 23, 117, 0.8);
+}
+
+button {
+    background-color:rgb(117, 45, 180);
+    border-radius: 5px;
+    color:azure;
+    background-color:rgb(117, 45, 180);
+    border-radius: 5px;
+    color:azure;
+}
+
+#navHeader {
+    background-color: rgb(217, 220, 241);
+    color: rgb(117, 45, 180);
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(117, 45, 180);
+}
+
+label {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(117, 45, 180);
+}
+
+select {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(117, 45, 180);
+    background-color: rgb(217, 220, 241);
+    border-radius: 5px;
+}
+
+.monsterSelection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+    padding-bottom:2vh;
+}
+
+.monsterLabel {
+    margin-bottom: 5px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.sliderLabel {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(117, 45, 180);
+    margin: 0 10px;
+}
+
+input[type=range] {
+    accent-color:rgb(117, 45, 180);
+    width: 50vw;
+}
+
+
+
+

@@ -1,0 +1,26 @@
+Watching for file changes with StatReloader
+[05/Mar/2026 18:17:18] "GET / HTTP/1.1" 200 448
+/home/ubuntu/webworkspace/djangoproject/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 05, 2026 - 18:17:02
+Django version 5.2.11, using settings 'djangoproject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+/home/ubuntu/webworkspace/djangoproject/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 05, 2026 - 18:41:45
+Django version 5.2.11, using settings 'djangoproject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader

@@ -1,0 +1,956 @@
+Specter
+Undead
+Medium undead, chaotic evil
+Armor Class 12
+Hit Points 22 (5d8)
+Speed 0 ft., fly 50 ft. (hover)
+STR
+1 (-5)DEX
+14 (+2)CON
+11 (+0)INT
+10 (+0)WIS
+10 (+0)CHA
+11 (+0)
+Damage Resistances acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities necrotic, poison
+Condition Immunities charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious
+Senses darkvision 60 ft., passive Perception 10
+Languages understands the languages it knew in life but can't speak
+Challenge 1 (200 XP)
+Incorporeal Movement. The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
+
+Sunlight Sensitivity. While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+Actions
+Life Drain. Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+
+
+Wraith
+Undead
+Medium undead, neutral evil
+Armor Class 13
+Hit Points 67 (9d8 + 27)
+Speed 0 ft., fly 60 ft. (hover)
+STR
+6 (-2)DEX
+16 (+3)CON
+16 (+3)INT
+12 (+1)WIS
+14 (+2)CHA
+15 (+2)
+Damage Resistances acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered
+Damage Immunities necrotic, poison
+Condition Immunities charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained
+Senses darkvision 60 ft., passive Perception 12
+Languages the languages it knew in life
+Challenge 5 (1800 XP)
+Incorporeal Movement. The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
+
+Sunlight Sensitivity. While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+Actions
+Life Drain. Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 21 (4d8 + 3) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+
+Create Specter. The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
+
+
+Mummy Lord
+Undead
+Medium undead, lawful evil
+Armor Class 17 (natural armor)
+Hit Points 97 (13d8 + 39)
+Speed 20 ft.
+STR
+18 (+4)DEX
+10 (+0)CON
+17 (+3)INT
+11 (+0)WIS
+18 (+4)CHA
+16 (+3)
+Saving Throws Con +8, Int +5, Wis +9, Cha +8
+Skills History +5, Religion +5
+Damage Vulnerabilities fire
+Damage Immunities necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks
+Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned
+Senses darkvision 60 ft., passive Perception 14
+Languages the languages it knew in life
+Challenge 15 (13000 XP)
+Magic Resistance. The mummy lord has advantage on saving throws against spells and other magical effects.
+
+Rejuvenation. A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart.
+
+Spellcasting. The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:
+
+Cantrips (at will): sacred flame, thaumaturgy
+1st level (4 slots): command, guiding bolt, shield of faith
+2nd level (3 slots): hold person, silence, spiritual weapon
+3rd level (3 slots): animate dead, dispel magic
+4th level (3 slots): divination, guardian of faith
+5th level (2 slots): contagion, insect plague
+6th level (1 slot): harm
+Actions
+Multiattack. The mummy can use its Dreadful Glare and makes one attack with its rotting fist.
+
+Rotting Fist. Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage plus 21 (6d6) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.
+
+Dreadful Glare. The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours.
+
+Legendary actions
+The mummy lord can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The mummy lord regains spent legendary actions at the start of its turn.
+
+Attack. The mummy lord makes one attack with its rotting fist or uses its Dreadful Glare.
+
+Blinding Dust. Blinding dust and sand swirls magically around the mummy lord. Each creature within 5 feet of the mummy lord must succeed on a DC 16 Constitution saving throw or be blinded until the end of the creature's next turn.
+
+Blasphemous Word (Costs 2 Actions). The mummy lord utters a blasphemous word. Each non-undead creature within 10 feet of the mummy lord that can hear the magical utterance must succeed on a DC 16 Constitution saving throw or be stunned until the end of the mummy lord's next turn.
+
+Channel Negative Energy (Costs 2 Actions). The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn.
+
+Whirlwind of Sand (Costs 2 Actions). The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.
+
+
+Skeleton
+Undead
+Medium undead, lawful evil
+Armor Class 13 (armor scraps)
+Hit Points 13 (2d8 + 4)
+Speed 30 ft.
+STR
+10 (+0)DEX
+14 (+2)CON
+15 (+2)INT
+6 (-2)WIS
+8 (-1)CHA
+5 (-3)
+Damage Vulnerabilities bludgeoning
+Damage Immunities poison
+Condition Immunities exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 9
+Languages understands the languages it knew in life but can't speak
+Challenge 1/4 (50 XP)
+Actions
+Shortsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+
+Shortbow. Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+
+
+Zombie
+Undead
+Medium undead, neutral evil
+Armor Class 8
+Hit Points 22 (3d8 + 9)
+Speed 20 ft.
+STR
+13 (+1)DEX
+6 (-2)CON
+16 (+3)INT
+3 (-4)WIS
+6 (-2)CHA
+5 (-3)
+Saving Throws Wis +0
+Damage Immunities poison
+Condition Immunities poisoned
+Senses darkvision 60 ft., passive Perception 8
+Languages understands the languages it knew in life but can't speak
+Challenge 1/4 (50 XP)
+Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
+
+Actions
+Slam. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.
+
+
+Shadow
+Undead
+Medium undead, chaotic evil
+Armor Class 12
+Hit Points 16 (3d8 + 3)
+Speed 40 ft.
+STR
+6 (-2)DEX
+14 (+2)CON
+13 (+1)INT
+6 (-2)WIS
+10 (+0)CHA
+8 (-1)
+Skills Stealth +4 (+6 in dim light or darkness)
+Damage Vulnerabilities radiant
+Damage Resistances acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities necrotic, poison
+Condition Immunities exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained
+Senses darkvision 60 ft., passive Perception 10
+Languages —
+Challenge 1/2 (100 XP)
+Amorphous. The shadow can move through a space as narrow as 1 inch wide without squeezing.
+
+Shadow Stealth. While in dim light or darkness, the shadow can take the Hide action as a bonus action.
+
+Sunlight Weakness. While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.
+
+Actions
+Strength Drain. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.
+
+
+Warhorse Skeleton
+Undead
+Large undead, lawful evil
+Armor Class 13 (barding scraps)
+Hit Points 22 (3d10 + 6)
+Speed 60 ft.
+STR
+18 (+4)DEX
+12 (+1)CON
+15 (+2)INT
+2 (-4)WIS
+8 (-1)CHA
+5 (-3)
+Damage Vulnerabilities bludgeoning
+Damage Immunities poison
+Condition Immunities exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 9
+Languages —
+Challenge 1/2 (100 XP)
+Actions
+Hooves. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.
+
+
+Ghoul
+Undead
+Medium undead, chaotic evil
+Armor Class 12
+Hit Points 22 (5d8)
+Speed 30 ft.
+STR
+13 (+1)DEX
+15 (+2)CON
+10 (+0)INT
+7 (-2)WIS
+10 (+0)CHA
+6 (-2)
+Damage Immunities poison
+Condition Immunities charmed, exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 10
+Languages Common
+Challenge 1 (200 XP)
+Actions
+Bite. Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage.
+
+Claws. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+
+Ghast
+Undead
+Medium undead, chaotic evil
+Armor Class 13
+Hit Points 36 (8d8)
+Speed 30 ft.
+STR
+16 (+3)DEX
+17 (+3)CON
+10 (+0)INT
+11 (+0)WIS
+10 (+0)CHA
+8 (-1)
+Damage Resistances necrotic
+Damage Immunities poison
+Condition Immunities charmed, exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 10
+Languages Common
+Challenge 2 (450 XP)
+Stench. Any creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours.
+
+Turning Defiance. The ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.
+
+Actions
+Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 12 (2d8 + 3) piercing damage.
+
+Claws. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+
+Minotaur Skeleton
+Undead
+Large undead, lawful evil
+Armor Class 12 (natural armor)
+Hit Points 67 (9d10 + 18)
+Speed 40 ft.
+STR
+18 (+4)DEX
+11 (+0)CON
+15 (+2)INT
+6 (-2)WIS
+8 (-1)CHA
+5 (-3)
+Damage Vulnerabilities bludgeoning
+Damage Immunities poison
+Condition Immunities exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 9
+Languages understands Abyssal but can't speak
+Challenge 2 (450 XP)
+Charge. If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.
+
+Actions
+Greataxe. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage.
+
+Gore. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.
+
+
+Ogre Zombie
+Undead
+Large undead, neutral evil
+Armor Class 8
+Hit Points 85 (9d10 + 36)
+Speed 30 ft.
+STR
+19 (+4)DEX
+6 (-2)CON
+18 (+4)INT
+3 (-4)WIS
+6 (-2)CHA
+5 (-3)
+Saving Throws Wis +0
+Damage Immunities poison
+Condition Immunities poisoned
+Senses darkvision 60 ft., passive Perception 8
+Languages understands Common and Giant but can't speak
+Challenge 2 (450 XP)
+Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
+
+Actions
+Morningstar. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
+
+
+Will-o'-Wisp
+Undead
+Tiny undead, chaotic evil
+Armor Class 19
+Hit Points 22 (9d4)
+Speed 0 ft., fly 50 ft. (hover)
+STR
+1 (-5)DEX
+28 (+9)CON
+10 (+0)INT
+13 (+1)WIS
+14 (+2)CHA
+11 (+0)
+Damage Immunities lightning, poison
+Damage Resistances acid, cold, fire, necrotic, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
+Condition Immunities exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious
+Senses darkvision 120 ft., passive Perception 12
+Languages the languages it knew in life
+Challenge 2 (450 XP)
+Consume Life. As a bonus action, the will-o'-wisp can target one creature it can see within 5 feet of it that has 0 hit points and is still alive. The target must succeed on a DC 10 Constitution saving throw against this magic or die. If the target dies, the will-o'-wisp regains 10 (3d6) hit points.
+
+Ephemeral. The will-o'-wisp can't wear or carry anything.
+
+Incorporeal Movement. The will-o'-wisp can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
+
+Variable Illumination. The will-o'-wisp sheds bright light in a 5-to 20-foot radius and dim light for an additional number of feet equal to the chosen radius. The will-o'-wisp can alter the radius as a bonus action.
+
+Actions
+Shock. Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d8) lightning damage.
+
+Invisibility. The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell).
+
+
+Mummy
+Undead
+Medium undead, lawful evil
+Armor Class 11 (natural armor)
+Hit Points 58 (9d8 + 18)
+Speed 20 ft.
+STR
+16 (+3)DEX
+8 (-1)CON
+15 (+2)INT
+6 (-2)WIS
+10 (+0)CHA
+12 (+1)
+Saving Throws Wis +2
+Damage Vulnerabilities fire
+Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities necrotic, poison
+Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned
+Senses darkvision 60 ft., passive Perception 10
+Languages the languages it knew in life
+Challenge 3 (700 XP)
+Actions
+Multiattack. The mummy can use its Dreadful Glare and makes one attack with its rotting fist.
+
+Rotting Fist. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.
+
+Dreadful Glare. The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.
+
+
+Wight
+Undead
+Medium undead, neutral evil
+Armor Class 14 (studded leather)
+Hit Points 45 (6d8 + 18)
+Speed 30 ft.
+STR
+15 (+2)DEX
+14 (+2)CON
+16 (+3)INT
+10 (+0)WIS
+13 (+1)CHA
+15 (+2)
+Skills Perception +3, Stealth +4
+Damage Resistances necrotic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered
+Damage Immunities poison
+Condition Immunities exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 13
+Languages the languages it knew in life
+Challenge 3 (700 XP)
+Sunlight Sensitivity. While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+Actions
+Multiattack. The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack.
+
+Life Drain. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time.
+
+Longsword. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands.
+
+Longbow. Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
+
+
+Banshee
+Undead
+Medium undead, chaotic evil
+Armor Class 12
+Hit Points 58 (13d8)
+Speed 0 ft., fly 40 ft. (hover)
+STR
+1 (-5)DEX
+14 (+2)CON
+10 (+0)INT
+12 (+1)WIS
+11 (+0)CHA
+17 (+3)
+Saving Throws Wis +2, Cha +5
+Damage Resistances acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities cold, necrotic, poison
+Condition Immunities charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained
+Senses darkvision 60 ft., passive Perception 10
+Languages Common, Elvish
+Challenge 4 (1100 XP)
+Detect Life. The banshee can magically sense the presence of creatures up to 5 miles away that aren't undead or constructs. She knows the general direction they're in but not their exact locations.
+
+Incorporeal Movement. The banshee can move through other creatures and objects as if they were difficult terrain. She takes 5 (1d10) force damage if she ends her turn inside an object.
+
+Actions
+Corrupting Touch. Melee Spell Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) necrotic damage.
+
+Horrifying Visage. Each non-undead creature within 60 feet of the banshee that can see her must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the banshee's Horrifying Visage for the next 24 hours.
+
+Wail (1/Day). The banshee releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a DC 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 (3d6) psychic damage.
+
+
+Bone Naga
+Undead
+Large undead, lawful evil
+Armor Class 15 (natural armor)
+Hit Points 58 (9d10 + 9)
+Speed 30 ft.
+STR
+15 (+2)DEX
+16 (+3)CON
+12 (+1)INT
+15 (+2)WIS
+15 (+2)CHA
+16 (+3)
+Damage Immunities poison
+Condition Immunities charmed, exhaustion, paralyzed, poisoned
+Senses darkvision 60 ft., passive Perception 12
+Languages Common plus one other language
+Challenge 4 (1100 XP)
+Spellcasting. The naga is a 5th-level spellcaster (spell save DC 12, +4 to hit with spell attacks) that needs only verbal components to cast its spells.
+
+If the naga was a guardian naga in life, its spellcasting ability is Wisdom, and it has the following cleric spells prepared:
+Cantrips (at will) : mending, sacred flame, thaumaturgy
+1st level (4 slots): command, shield of faith
+2nd level (3 slots): calm emotions, hold person
+3rd level (2 slots): bestow curse
+If the naga was a spirit naga in life, its spellcasting ability is Intelligence, and it has the following wizard spells prepared:
+Cantrips (at will) : mage hand, minor illusion, ray of frost
+1st level (4 slots): charm person, sleep
+2nd level (3 slots): detect thoughts, hold person
+3rd level (2 slots): lightning bolt
+Actions
+Bite. Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 10 (2d6 + 3) piercing damage plus 10 (3d6) poison damage.
+
+
+Flameskull
+Undead
+Tiny undead, neutral evil
+Armor Class 13
+Hit Points 40 (9d4 + 18)
+Speed 0 ft., fly 40 ft. (hover)
+STR
+1 (-5)DEX
+17 (+3)CON
+14 (+2)INT
+16 (+3)WIS
+10 (+0)CHA
+11 (+0)
+Skills Arcana +5, Perception +2
+Damage Resistances lightning, necrotic, piercing
+Damage Immunities cold, fire, poison
+Condition Immunities charmed, frightened, paralyzed, poisoned, prone
+Senses darkvision 60 ft., passive Perception 12
+Languages Common
+Challenge 4 (1100 XP)
+Illumination. The flameskull sheds either dim light in a 15-foot radius, or bright light in a 15-foot radius and dim light for an additional 15 feet. It can switch between the options as an action.
+
+Magic Resistance. The flameskull has advantage on saving throws against spells and other magical effects.
+
+Rejuvenation. If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a dispel magic or remove curse spell is cast on them.
+
+Spellcasting. The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared:
+
+Cantrips (at will): mage hand
+1st level (3 slots): magic missile, shield
+2nd level (2 slots): blur, flaming sphere
+3rd level (1 slot): fireball
+Actions
+Multiattack. The flameskull uses Fire Ray twice.
+
+Fire Ray. Ranged Spell Attack: +5 to hit, range 30 ft., one target. Hit: 10 (3d6) fire damage.
+
+
+Ghost
+Undead
+Medium undead, any alignment
+Armor Class 11
+Hit Points 45 (10d8)
+Speed 0 ft., fly 40 ft. (hover)
+STR
+7 (-2)DEX
+13 (+1)CON
+10 (+0)INT
+10 (+0)WIS
+12 (+1)CHA
+17 (+3)
+Damage Resistances acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities cold, necrotic, poison
+Condition Immunities charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained
+Senses darkvision 60 ft., passive Perception 11
+Languages the languages it knew in life
+Challenge 4 (1100 XP)
+Ethereal Sight. The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.
+
+Incorporeal Movement. The ghost can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
+
+Actions
+Withering Touch. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 17 (4d6 + 3) necrotic damage.
+
+Etherealness. The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.
+
+Horrifying Visage. Each non-undead creature within 60 feet of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 x 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.
+
+Possession (Recharge 6). One humanoid that the ghost can see within 5 feet of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies. The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.
+
+
+Beholder Zombie
+Undead
+Large undead, neutral evil
+Armor Class 15 (natural armor)
+Hit Points 93 (11d10 + 33)
+Speed 0 ft., fly 20 ft. (hover)
+STR
+10 (+0)DEX
+8 (-1)CON
+16 (+3)INT
+3 (-4)WIS
+8 (-1)CHA
+5 (-3)
+Saving Throws Wis +2
+Damage Immunities poison
+Condition Immunities poisoned, prone
+Senses darkvision 60 ft., passive Perception 9
+Languages understands Deep Speech and Undercommon but can't speak
+Challenge 5 (1800 XP)
+Undead Fortitude. If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.
+
+Actions
+Bite. Bite. Melee Attack Roll: +5, reach 5 ft. Hit: 16 (4d6 + 2) Piercing damage.
+
+Eye Ray. The zombie randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d4; reroll if the zombie has already used that ray during this turn):
+
+1- Paralyzing Ray. Constitution Saving Throw: DC 14. Failure: The target has the Paralyzed condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.
+
+2- Fear Ray. Wisdom Saving Throw: DC 14. Failure: 13 (3d8) Psychic damage, and the target has the Frightened condition until the end of its next turn.
+
+3- Enervation Ray. Constitution Saving Throw: DC 14. Failure: 10 (3d6) Necrotic damage, and the target has the Poisoned condition until the end of its next turn. While Poisoned, the target can't regain Hit Points. Success: Half damage only.
+
+4- Disintegration Ray. Dexterity Saving Throw: DC 14. Failure: 27 (5d10) Force damage. If the target is a nonmagical object or a creation of magical force, a 10-foot Cube of it disintegrates into dust. Success: Half damage. Failure or Success: If the target is a creature and this damage reduces it to 0 Hit Points, it disintegrates into dust.
+
+
+Revenant
+Undead
+Medium undead, neutral
+Armor Class 13 (leather armor)
+Hit Points 136 (16d8 + 64)
+Speed 30 ft.
+STR
+18 (+4)DEX
+14 (+2)CON
+18 (+4)INT
+13 (+1)WIS
+16 (+3)CHA
+18 (+4)
+Saving Throws Str +7, Con +7, Wis +6, Cha +7
+Damage Resistances necrotic, psychic
+Damage Immunities poison
+Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned, stunned
+Senses darkvision 60 ft., passive Perception 13
+Languages the languages it knew in life
+Challenge 5 (1800 XP)
+Regeneration. The revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate.
+
+Rejuvenation. When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a wish spell can be used to force the soul to go to the afterlife and not return.
+
+Turn Immunity. The revenant is immune to effects that turn undead.
+
+Vengeful Tracker. The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows.
+
+Actions
+Multiattack. The revenant makes two fist attacks.
+
+Fist. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 (4d6) bludgeoning damage. Instead of dealing damage, the revenant can grapple the target (escape DC 14) provided the target is Large or smaller.
+
+Vengeful Glare. The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a DC 15 Wisdom saving throw. On a failure, the target is paralyzed until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is frightened of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success.
+
+
+Vampire Spawn
+Undead
+Medium undead, neutral evil
+Armor Class 15 (natural armor)
+Hit Points 82 (11d8 + 33)
+Speed 30 ft.
+STR
+16 (+3)DEX
+16 (+3)CON
+16 (+3)INT
+11 (+0)WIS
+10 (+0)CHA
+12 (+1)
+Saving Throws Dex +6, Wis +3
+Skills Perception +3, Stealth +6
+Damage Resistances necrotic; bludgeoning, piercing, and slashing from nonmagical attacks
+Senses darkvision 60 ft., passive Perception 13
+Languages the languages it knew in life
+Challenge 5 (1800 XP)
+Regeneration. The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.
+
+Spider Climb. The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+Vampire Weaknesses. The vampire has the following flaws:
+
+  Forbiddance. The vampire can't enter a residence without an invitation from one of the occupants.
+
+  Harmed by Running Water. The vampire takes 20 acid damage when it ends its turn in running water.
+
+  Stake to the Heart. The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is incapacitated in its resting place.
+
+  Sunlight Hypersensitivity. The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.
+
+Actions
+Multiattack. The vampire makes two attacks, only one of which can be a bite attack.
+
+Claws. Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 8 (2d4 + 3) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape DC 13).
+
+Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+
+
+Death Tyrant
+Undead
+Large undead, lawful evil
+Armor Class 19 (natural armor)
+Hit Points 187 (25d10 + 50)
+Speed 0 ft., fly 20 ft. (hover)
+STR
+10 (+0)DEX
+14 (+2)CON
+14 (+2)INT
+19 (+4)WIS
+15 (+2)CHA
+19 (+4)
+Saving Throws Str +5, Con +7, Int +9, Wis +7, Cha +9
+Skills Perception +12
+Damage Immunities poison
+Condition Immunities charmed, exhaustion, paralyzed, petrified, poisoned, prone
+Senses darkvision 120 ft., passive Perception 22
+Languages Deep Speech, Undercommon
+Challenge 14 (11500 XP)
+Negative Energy Cone. The death tyrant's central eye emits an invisible, magical 1 50-foot cone of negative energy. At the start of each of its turns, the tyrant decides which way the cone faces and whether the cone is active. Any creature in that area can't regain hit points. Any humanoid that dies there becomes a zombie under the tyrant's command. The dead humanoid retains its place in the initiative order and animates at the start of its next turn, provided that its body hasn't been completely destroyed.
+
+Actions
+Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.
+
+Eye Rays. The death tyrant shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:
+
+  1- Charm Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or be charmed by the tyrant for 1 hour, or until the beholder harms the creature.
+
+  2- Paralyzing Ray. The targeted creature must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+  3- Fear Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+  4- Slowing Ray. The targeted creature must succeed on a DC 17 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+  5- Enervation Ray. The targeted creature must make a DC 17 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.
+
+  6- Telekinetic Ray. If the target is a creature, it must succeed on a DC 17 Strength saving throw or the tyrant moves it up to 30 feet in any direction. The target is restrained by the ray's telekinetic grip until the start of the tyrant's next turn or until the tyrant is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The tyrant can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.
+
+  7- Sleep Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.
+
+  8- Petrification Ray. The targeted creature must make a DC 17 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.
+
+  9- Disintegration Ray. If the target is a creature, it must succeed on a DC 17 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.
+
+  10- Death Ray. The targeted creature must succeed on a DC 17 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.
+
+Legendary actions
+The death tyrant can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The tyrant regains spent legendary actions at the start of its turn.
+
+Eye Ray. The death tyrant uses one random eye ray.
+
+
+Mummy Lord
+Undead
+Medium undead, lawful evil
+Armor Class 17 (natural armor)
+Hit Points 97 (13d8 + 39)
+Speed 20 ft.
+STR
+18 (+4)DEX
+10 (+0)CON
+17 (+3)INT
+11 (+0)WIS
+18 (+4)CHA
+16 (+3)
+Saving Throws Con +8, Int +5, Wis +9, Cha +8
+Skills History +5, Religion +5
+Damage Vulnerabilities fire
+Damage Immunities necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks
+Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned
+Senses darkvision 60 ft., passive Perception 14
+Languages the languages it knew in life
+Challenge 15 (13000 XP)
+Magic Resistance. The mummy lord has advantage on saving throws against spells and other magical effects.
+
+Rejuvenation. A destroyed mummy lord gains a new body in 24 hours if its heart is intact, regaining all its hit points and becoming active again. The new body appears within 5 feet of the mummy lord's heart.
+
+Spellcasting. The mummy lord is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The mummy lord has the following cleric spells prepared:
+
+Cantrips (at will): sacred flame, thaumaturgy
+1st level (4 slots): command, guiding bolt, shield of faith
+2nd level (3 slots): hold person, silence, spiritual weapon
+3rd level (3 slots): animate dead, dispel magic
+4th level (3 slots): divination, guardian of faith
+5th level (2 slots): contagion, insect plague
+6th level (1 slot): harm
+Actions
+Multiattack. The mummy can use its Dreadful Glare and makes one attack with its rotting fist.
+
+Rotting Fist. Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage plus 21 (6d6) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.
+
+Dreadful Glare. The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours.
+
+Legendary actions
+The mummy lord can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The mummy lord regains spent legendary actions at the start of its turn.
+
+Attack. The mummy lord makes one attack with its rotting fist or uses its Dreadful Glare.
+
+Blinding Dust. Blinding dust and sand swirls magically around the mummy lord. Each creature within 5 feet of the mummy lord must succeed on a DC 16 Constitution saving throw or be blinded until the end of the creature's next turn.
+
+Blasphemous Word (Costs 2 Actions). The mummy lord utters a blasphemous word. Each non-undead creature within 10 feet of the mummy lord that can hear the magical utterance must succeed on a DC 16 Constitution saving throw or be stunned until the end of the mummy lord's next turn.
+
+Channel Negative Energy (Costs 2 Actions). The mummy lord magically unleashes negative energy. Creatures within 60 feet of the mummy lord, including ones behind barriers and around corners, can't regain hit points until the end of the mummy lord's next turn.
+
+Whirlwind of Sand (Costs 2 Actions). The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession.
+
+
+Adult Blue Dracolich
+Undead
+Huge undead, lawful evil
+Armor Class 19 (natural armor)
+Hit Points 225 (18d12 + 108)
+Speed 40 ft., burrow 30 ft., fly 80 ft.
+STR
+25 (+7)DEX
+10 (+0)CON
+23 (+6)INT
+16 (+3)WIS
+15 (+2)CHA
+19 (+4)
+Saving Throws Dex +6, Con +12, Wis +8, Cha +10
+Skills Perception +14, Stealth +6
+Damage Resistances necrotic
+Damage Immunities lightning, poison
+Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned
+Senses blindsight 60 ft., darkvision 120 ft., passive Perception 24
+Languages Common, Draconic
+Challenge 17 (18000 XP)
+Legendary Resistance (3/Day). If the dracolich fails a saving throw, it can choose to succeed instead.
+
+Magic Resistance. The dracolich has advantage on saving throws against spells and other magical effects.
+
+Actions
+Multiattack. The dracolich can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
+
+Bite. Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage.
+
+Claw. Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage.
+
+Tail. Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage.
+
+Frightful Presence. Each creature of the dracolich's choice that is within 120 feet of the dracolich and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dracolich's Frightful Presence for the next 24 hours.
+
+Lightning Breath (Recharge 5–6). The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.
+
+Legendary actions
+The dracolich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dracolich regains spent legendary actions at the start of its turn.
+
+Detect. The dracolich makes a Wisdom (Perception) check.
+
+Tail Attack. The dracolich makes a tail attack.
+
+Wing Attack (Costs 2 Actions). The dracolich beats its tattered wings. Each creature within 10 ft. of the dracolich must succeed on a DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.
+
+
+Death Knight
+Undead
+Medium undead, chaotic evil
+Armor Class 20 (plate, shield)
+Hit Points 180 (19d8 + 95)
+Speed 30 ft.
+STR
+20 (+5)DEX
+11 (+0)CON
+20 (+5)INT
+12 (+1)WIS
+16 (+3)CHA
+18 (+4)
+Saving Throws Dex +6, Wis +9, Cha +10
+Damage Immunities necrotic, poison
+Condition Immunities exhaustion, frightened, poisoned
+Senses darkvision 120 ft., passive Perception 13
+Languages Abyssal, Common
+Challenge 17 (18000 XP)
+Magic Resistance. The death knight has advantage on saving throws against spells and other magical effects.
+
+Marshal Undead. Unless the death knight is incapacitated, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead.
+
+Spellcasting. The death knight is a 19th-level spell caster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared:
+
+1st level (4 slots): command, compelled duel, searing smite
+2nd level (3 slots): hold person, magic weapon
+3rd level (3 slots): dispel magic, elemental weapon
+4th level (3 slots): banishment, staggering smite
+5th level (2 slots): destructive wave (necrotic)
+Actions
+Multiattack. The death knight makes three longsword attacks.
+
+Longsword. Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage, or 10 (1d10 + 5) slashing damage if used with two hands, plus 18 (4d8) necrotic damage.
+
+Hellfire Orb (1/Day). The death knight hurls a magical ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a DC 18 Dexterity saving throw. The sphere spreads around corners. A creature takes 35 (10d6) fire damage and 35 (10d6) necrotic damage on a failed save, or half as much damage on a successful one.
+
+Reactions
+Parry. The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon.
+
+
+Demilich
+Undead
+Tiny undead, neutral evil
+Armor Class 20 (natural armor)
+Hit Points 80 (32d4)
+Speed 0 ft., fly 30 ft. (hover)
+STR
+1 (-5)DEX
+20 (+5)CON
+10 (+0)INT
+20 (+5)WIS
+17 (+3)CHA
+20 (+5)
+Saving Throws Con +6, Int +11, Wis +9, Cha +11
+Damage Resistances bludgeoning, piercing, and slashing from magic weapons
+Damage Immunities necrotic, poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks
+Condition Immunities charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone, stunned
+Senses truesight 120 ft., passive Perception 13
+Languages —
+Challenge 18 (20000 XP)
+Avoidance. If the demilich is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+
+Legendary Resistance (3/Day). If the demilich fails a saving throw, it can choose to succeed instead.
+
+Turn Immunity. The demilich is immune to effects that turn undead.
+
+Actions
+Howl (Recharge 5-6). The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is frightened until the end of its next turn.
+
+Life Drain. The demilich targets up to three creatures that it can see within 10 feet of it. Each target must succeed on a DC 19 Constitution saving throw or take 21 (6d6) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets.
+
+Legendary actions
+The demilich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The demilich regains spent legendary actions at the start of its turn.
+
+Flight. The demilich flies up to half its flying speed.
+
+Cloud of Dust. The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a DC 15 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn.
+
+Energy Drain (Costs 2 Actions). Each creature within 30 feet of the demilich must make a DC 15 Constitution saving throw. On a failed save, the creature's hit point maximum is magically reduced by 10 (3d6). If a creature's hit point maximum is reduced to 0 by this effect, the creature dies. A creature's hit point maximum can be restored with the greater restoration spell or similar magic.
+
+Vile Curse (Costs 3 Actions). The demilich targets one creature it can see within 30 feet of it. The target must succeed on a DC 15 Wisdom saving throw or be magically cursed. Until the curse ends, the target has disadvantage on attack rolls and saving throws. The target can repeat the saving throw at the end of each of its turns, ending the curse on a success.
+
+
+Lich
+Undead
+Medium undead, any evil alignment
+Armor Class 17 (natural armor)
+Hit Points 135 (18d8 + 54)
+Speed 30 ft.
+STR
+11 (+0)DEX
+16 (+3)CON
+16 (+3)INT
+20 (+5)WIS
+14 (+2)CHA
+16 (+3)
+Saving Throws Con +10, Int +12, Wis +9
+Skills Arcana +19, History +12, Insight +9, Perception +9
+Damage Resistances cold, lightning, necrotic
+Damage Immunities poison; bludgeoning, piercing, and slashing from nonmagical attacks
+Condition Immunities charmed, exhaustion, frightened, paralyzed, poisoned
+Senses truesight 120 ft., passive Perception 19
+Languages Common plus up to five other languages
+Challenge 21 (33000 XP)
+Legendary Resistance (3/Day). If the lich fails a saving throw, it can choose to succeed instead.
+
+Rejuvenation. If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery.
+
+Spellcasting. The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:
+
+Cantrips (at will): mage hand, prestidigitation, ray of frost
+1st level (4 slots): detect magic, magic missile, shield, thunderwave
+2nd level (3 slots): detect thoughts, invisibility, Melf's acid arrow, mirror image
+3rd level (3 slots): animate dead, counterspell, dispel magic, fireball
+4th level (3 slots): blight, dimension door
+5th level (3 slots): cloudkill, scrying
+6th level (1 slot): disintegrate, globe of invulnerability
+7th level (1 slot): finger of death, plane shift
+8th level (1 slot): dominate monster, power word stun
+9th level (1 slot): power word kill
+Turn Resistance. The lich has advantage on saving throws against any effect that turns undead.
+
+Actions
+Paralyzing Touch. Melee Spell Attack: +12 to hit, reach 5 ft., one creature. Hit: 10 (3d6) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+Legendary actions
+The lich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The lich regains spent legendary actions at the start of its turn.
+
+Cantrip. The lich casts a cantrip.
+
+Paralyzing Touch (Costs 2 Actions). The lich uses its Paralyzing Touch.
+
+Frightening Gaze (Costs 2 Actions). The lich fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 18 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the lich's gaze for the next 24 hours.
+
+Disrupt Life (Costs 3 Actions). Each non‐undead creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.
+
