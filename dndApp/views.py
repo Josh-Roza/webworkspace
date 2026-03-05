@@ -7,6 +7,9 @@ def homePage(request):
 def scenGen(request):
     return render(request, 'scenGen.html')
 
+def scenViewer(request):
+    return render(request, 'scenViewer.html')
+
 def savedScenarios(request):
     return render(request, 'savedScenarios.html')
 

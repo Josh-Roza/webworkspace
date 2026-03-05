@@ -21,19 +21,19 @@ body {
         var(--frame-size) var(--frame-size);
 }
 
-.minus1Health {
+.minus1health {
     background-color: red;
     font-size: 20px;
     font-weight: bold;
 }
 
-.minus5Health {
+.minus5health {
     background-color: red;
     font-size: 30px;
     font-weight: bold;
 }
 
-.minus20Health {
+.minus20health {
     background-color: red;
     font-size: 40px;
     font-weight: bold;
@@ -43,17 +43,50 @@ button:hover {
     background-color: darkred;
 }
 
-.plus1Health {
+.plus1health {
     background-color: green;
     font-size: 20px;
     font-weight: bold;
 }
 
-.plus1Health:hover {
+.plus1health:hover {
     background-color: lightgreen;
 }
 
 .monsterHealth {
     display: flex;
     flex-direction: row;
+}
+
+/* More specific rules to ensure these buttons override other global styles */
+.monsterHealth button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: none;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.monsterHealth button.minus1health {
+    background-color: red;
+}
+
+.monsterHealth button.minus5health {
+    background-color: red;
+    font-size: 30px;
+}
+
+.monsterHealth button.minus20health {
+    background-color: red;
+    font-size: 40px;
+}
+
+.monsterHealth button.plus1health {
+    background-color: green;
+}
+
+.monsterHealth button:hover {
+    filter: brightness(0.8);
 }
