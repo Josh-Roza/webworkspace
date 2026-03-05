@@ -4,7 +4,8 @@ function summon(monsterName){
         //if the monster is already there add another health mod
     }
     else{
-        pass
+        newDiv = document.createElement("div");
+        newDiv.innerHTML += pass;
     }
 }
     

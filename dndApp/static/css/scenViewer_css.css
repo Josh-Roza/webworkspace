@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    --frame-size: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--frame-size);
+    background-color: rgb(202, 210, 218);
+    background-image:
+        url('../images/dndAppBorderImage.png'),
+        url('../images/dndAppBorderImage.png');
+    background-repeat: repeat-y, repeat-y;
+    background-position: left top, right top;
+    background-size:
+        var(--frame-size) var(--frame-size),
+        var(--frame-size) var(--frame-size);
+}
+
+.minus1Health {
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.minus5Health {
+    background-color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.minus20Health {
+    background-color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.plus1Health {
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plus1Health:hover {
+    background-color: lightgreen;
+}
+
+.monsterHealth {
+    display: flex;
+    flex-direction: row;
+}
