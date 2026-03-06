@@ -21,6 +21,16 @@ body {
         var(--frame-size) var(--frame-size);
 }
 
+.content-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.monsterDescription {
+    flex: 0 0 auto;
+}
+
 .minus1health {
     background-color: red;
     font-size: 20px;
@@ -89,4 +99,9 @@ button:hover {
 
 .monsterHealth button:hover {
     filter: brightness(0.8);
+}
+
+#monsters {
+    display: flex;
+    flex-direction: row;
 }

@@ -8,50 +8,121 @@
     <link rel="stylesheet" href="{% static 'css/scenViewer_css.css' %}" />
   </head>
   <body>
-    <div class="content-wrapper">
-
-      <div id="navHeader">
+    <div id="navHeader">
         <a href="{% url 'scenGen' %}">Scenario Generator</a>
         <hr>
       </div>
-      <div class = "monsterDescription">
-        <h2>Monster Name</h2>
-        <p>Monster Type</p>
-        <p>HP: 100</p>
-        <p>AC: 15</p>
-        <P>Speed: 30 ft.</P>
-        <P>CR: 3</P>
-        <p> STR  DEX  CON  WIS  INT  CHR <br>
-            11   12   13   14   15   16</p>
-        <p>
-            Saving Throws: Dex +3, Wis +4 <br>
-            Skills: Stealth +3, Perception +4 <br>
-            Senses: Darkvision 60 ft., passive Perception 14 <br>
-            Languages: Common, Goblin
-        </p>
-        <p>
-            Actions: <br>
-            Claw: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage. <br>
-            Bite: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage.
-        </p>
-        <p>
-            Legendary Actions: <br>
-            The monster can take 1 legendary action, choosing from the options below. Only one legendary<br>
-            action option can be used at a time and only at the end of another creature's turn.<br>
-            Detect: The monster makes a Wisdom (Perception) check. <br>
-            Move: The monster moves up to its speed without provoking opportunity attacks. <br>
-            Attack: The monster makes one attack with its Claw or Bite.
-        </p>
-        
+    <div id="monsters">
+    <div class="content-wrapper">
+        <div class = "monsterDescription">
+          <h2>Monster Name</h2>
+          <p>Monster Type</p>
+          <p>HP: 100</p>
+          <p>AC: 15</p>
+          <P>Speed: 30 ft.</P>
+          <P>CR: 3</P>
+          <p> STR  DEX  CON  WIS  INT  CHR <br>
+              11   12   13   14   15   16</p>
+          <p>
+              Saving Throws: Dex +3, Wis +4 <br>
+              Skills: Stealth +3, Perception +4 <br>
+              Senses: Darkvision 60 ft., passive Perception 14 <br>
+              Languages: Common, Goblin
+          </p>
+          <p>
+              Actions: <br>
+              Claw: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage. <br>
+              Bite: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage.
+          </p>
+          <p>
+              Legendary Actions: <br>
+              The monster can take 1 legendary action, choosing from the options below. Only one legendary<br>
+              action option can be used at a time and only at the end of another creature's turn.<br>
+              Detect: The monster makes a Wisdom (Perception) check. <br>
+              Move: The monster moves up to its speed without provoking opportunity attacks. <br>
+              Attack: The monster makes one attack with its Claw or Bite.
+          </p>
+          <div class="monsterHealth">
+            <button class="minus1health">-1</button>
+            <button class="minus5health">-5</button>
+            <button class="minus20health">-20</button>
+            <button class="plus1health">+1</button>
+          <p>HP: 100</p>
+          </div>
+        </div>
+        <div class = "monsterDescription">
+          <h2>Monster Name</h2>
+          <p>Monster Type</p>
+          <p>HP: 100</p>
+          <p>AC: 15</p>
+          <P>Speed: 30 ft.</P>
+          <P>CR: 3</P>
+          <p> STR  DEX  CON  WIS  INT  CHR <br>
+              11   12   13   14   15   16</p>
+          <p>
+              Saving Throws: Dex +3, Wis +4 <br>
+              Skills: Stealth +3, Perception +4 <br>
+              Senses: Darkvision 60 ft., passive Perception 14 <br>
+              Languages: Common, Goblin
+          </p>
+          <p>
+              Actions: <br>
+              Claw: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage. <br>
+              Bite: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage.
+          </p>
+          <p>
+              Legendary Actions: <br>
+              The monster can take 1 legendary action, choosing from the options below. Only one legendary<br>
+              action option can be used at a time and only at the end of another creature's turn.<br>
+              Detect: The monster makes a Wisdom (Perception) check. <br>
+              Move: The monster moves up to its speed without provoking opportunity attacks. <br>
+              Attack: The monster makes one attack with its Claw or Bite.
+          </p>
+          <div class="monsterHealth">
+            <button class="minus1health">-1</button>
+            <button class="minus5health">-5</button>
+            <button class="minus20health">-20</button>
+            <button class="plus1health">+1</button>
+          <p>HP: 100</p>
+          </div>
+        </div>
+        <div class = "monsterDescription">
+          <h2>Monster Name</h2>
+          <p>Monster Type</p>
+          <p>HP: 100</p>
+          <p>AC: 15</p>
+          <P>Speed: 30 ft.</P>
+          <P>CR: 3</P>
+          <p> STR  DEX  CON  WIS  INT  CHR <br>
+              11   12   13   14   15   16</p>
+          <p>
+              Saving Throws: Dex +3, Wis +4 <br>
+              Skills: Stealth +3, Perception +4 <br>
+              Senses: Darkvision 60 ft., passive Perception 14 <br>
+              Languages: Common, Goblin
+          </p>
+          <p>
+              Actions: <br>
+              Claw: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage. <br>
+              Bite: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage.
+          </p>
+          <p>
+              Legendary Actions: <br>
+              The monster can take 1 legendary action, choosing from the options below. Only one legendary<br>
+              action option can be used at a time and only at the end of another creature's turn.<br>
+              Detect: The monster makes a Wisdom (Perception) check. <br>
+              Move: The monster moves up to its speed without provoking opportunity attacks. <br>
+              Attack: The monster makes one attack with its Claw or Bite.
+          </p>
+          <div class="monsterHealth">
+            <button class="minus1health">-1</button>
+            <button class="minus5health">-5</button>
+            <button class="minus20health">-20</button>
+            <button class="plus1health">+1</button>
+          <p>HP: 100</p>
+          </div>
+        </div>
       </div>
-      <div class="monsterHealth">
-        <button class="minus1health">-1</button>
-        <button class="minus5health">-5</button>
-        <button class="minus20health">-20</button>
-        <button class="plus1health">+1</button>
-        <p>HP: 100</p>
-      </div>
-
     </div>
   </body>
 </html>
