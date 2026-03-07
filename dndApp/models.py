@@ -5,6 +5,7 @@ class Monster(models.Model):
     HP = models.IntegerField()
     AC = models.IntegerField()
     CR = models.CharField(max_length=10)
+    XP = models.CharField(max_length=10, default="100")
     speed = models.CharField(max_length=300)
     stats = models.CharField(max_length=100)
     skills = models.TextField()
@@ -15,6 +16,6 @@ class Monster(models.Model):
     pack = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.name
+        return f'{self.name}, CR:{self.CR} XP: {self.XP}'
 
 

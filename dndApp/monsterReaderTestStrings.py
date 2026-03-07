@@ -39,6 +39,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
         AC = ""
         speed = ""
         CR = ""
+        XP = ""
         pack = ""
         statsList = []
         stats = ""
@@ -81,6 +82,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
         
         if lines[i].split()[0] == "Challenge":
             CR = lines[i].split()[1]
+            XP = ''.join(n for n in lines[i].split()[2] if n.isdigit())
         i += 1
 
     #Adds all the lines from the attributes category into an array
@@ -122,12 +124,13 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
         #    newMonster.append(legendaryActions)
         #newMonsters.append(newMonster)
 
-        Monster.objects.create(name = name, HP = int(HP), AC = int(AC), CR = CR, speed = speed, stats = stats, skills = skills, attributes = attributes, actions = actions, legendaryActions = legendaryActions, rangedAttack = rangedAttack, pack = pack)
+        Monster.objects.create(name = name, HP = int(HP), AC = int(AC), CR = CR, XP = XP,   speed = speed, stats = stats, skills = skills, attributes = attributes, actions = actions, legendaryActions = legendaryActions, rangedAttack = rangedAttack, pack = pack)
 
         print(f'name: {name}')
         print(f'HP: {HP}')
         print(f'AC: {AC}')
         print(f'CR {CR}')
+        print(f'XP: {XP}')
         print(f'speed: {speed}')
         print(f'pack: {pack}')
         print(f'Range: {rangedAttack}')
