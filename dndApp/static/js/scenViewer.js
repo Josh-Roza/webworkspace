@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     scenario = JSON.parse(raw);
   } catch (e) {
     console.error('Invalid scenario JSON', e);
-    return;
-  }
+    return;  }
 
   console.log('scenario from sessionStorage', scenario);
 });
 
-monsterDiv = document.getElementById("monsterDiv");
+let monsterDiv = document.getElementById("monsterDiv");
+let monsterHealths = [];
 
 function summon(monster){
     if (pass){
@@ -48,25 +48,39 @@ function summon(monster){
         freshMonster.innerHTML = `
         <h2>${monster[8]}</h2>
         <p>${monster[9]}</p>
-        <p>HP: ${str(monster[2])}</p>
-        <p>AC: ${str(monster[0])}</p>
+        <p>HP: ${monster[2]}</p>
+        <p>AC: ${monster[0]}</p>
         <P>Speed: ${monster[12]}</P>
-        <P>CR: ${str(monster[1])}, XP: ${str(monster[3])})}</P>
+        <P>CR: ${monster[1]}, XP: ${monster[3]})}</P>
         <p>${monster[13]}</p>
         <p>${monster[11]}</p>
         <p>${monster[5]}</p>
         <p>${monsters[4]}</p>
-        <p>${monsters[7]}</p>`
+        <p>${monsters[7]}</p>`;
+        monsterHealths.append(monster[2]);
         freshHealth = document.createElement("div");
         freshHealth.classList.add("monsterHealth");
         freshHealth.id = `${monster.name}Health`;
         freshMonster.appendChild(freshHealth);
         freshHealth.innerHTML = `
-        <button class="minus1health">-1</button>
-        <button class="minus5health">-5</button>
-        <button class="minus20health">-20</button>
-        <button class="plus1health">+1</button>
-        <p>HP: ${str(monster[2])}</p>`
+        <button class="minus1health" id="minus1Health${monsterHealths.length-1}>-1</button>
+        <button class="minus5health" id="minus5Health${monsterHealths.length-1}>-5</button>
+        <button class="minus20health" id="minus20Health${monsterHealths.length-1}>-20</button>
+        <button class="plus1health" id="plus1health${monsterHealths.length-1}>+1</button>
+        <p id="${monsterHealths.length-1}Health">HP: ${monster[2]}</p>`;
+        buttonChanges = [1,5,20];
+        for (let i = 0; i < buttonChanges.length; i++) {
+          document.getElementById(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`).addEventListener("click", () => {
+              id = parseInt(this.id.replace(`minus${buttonChanges[i]}Health`, ""));
+              monsterHealths[id] -= 1;
+              document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
+          })
+        };
+        document.getElementById(`plus1Health${monsterHealths.length-1}`).addEventListener("click", () => {
+            id = parseInt(this.id.replace(`plus1Health`, ""));
+            monsterHealths[id] += 1;
+            document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
+        });
     }
 }
     
