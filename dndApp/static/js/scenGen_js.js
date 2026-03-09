@@ -53,7 +53,52 @@ function generateScenario() {
         var monsterAbundance = document.getElementById("abundanceSlider").value;
         var rangeMelee = document.getElementById("meleeRangedSlider").value;
     }
+
+    // prepare payload
+    const payload = {
+        playerNumber: Number(playerNumber) || 1,
+        partyLvl: Number(partyLvl) || 1,
+        scenarioDifficulty: scenarioDifficulty,
+        monsterPack: monsterPack || null,
+        monsterAbundance: Number(monsterAbundance) || null,
+        rangeMelee: Number(rangeMelee) || null,
+    };
+
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    const csrftoken = getCookie('csrftoken');
+
+    // POST to server API, save response to sessionStorage and open scenViewer
+    fetch('/api/generateEncounter/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrftoken || ''
+        },
+        body: JSON.stringify(payload)
+    }).then(async (resp) => {
+        if (!resp.ok) {
+            const text = await resp.text();
+            console.error('Generate failed', resp.status, text);
+            alert('Failed to generate scenario');
+            return;
+        }
+        const data = await resp.json();
+        // save scenario for scenViewer to read
+        sessionStorage.setItem('lastScenario', JSON.stringify(data));
+        // navigate to scenViewer page
+        window.location.href = '/scenViewer/';
+    }).catch((err) => {
+        console.error('Generate error', err);
+        alert('Error generating scenario');
+    });
 }
+
+
 
 switchToSimple();
 
