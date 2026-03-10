@@ -2,6 +2,9 @@ import re
 import os
 import sys
 from pathlib import Path
+import textwrap
+
+textWidth = 40
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
@@ -89,15 +92,17 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
         attributes = ""
         while lines[i].strip() != "Actions":
             if lines[i].strip() != "":
-                attributes += lines[i]
+                attributes += lines[i] + "\n"
             i += 1
         i += 1
+        attributes = textwrap.fill(attributes, width = textWidth)
 
         actions = ""
         while lines[i].strip() != "Legendary actions" and not(lines[i].strip() == "" and i+1 < len(lines) and lines[i+1].strip() == ""):
             if lines[i].strip() != "":
                 actions += lines[i]
             i += 1
+        actions = textwrap.fill(actions, width = textWidth)
 
         legendaryActions = ""
         if i < len(lines) and lines[i].strip() == "Legendary actions":
@@ -105,6 +110,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
                 if lines[i].strip() != "":
                     legendaryActions += lines[i]
                 i += 1
+        legendaryActions = textwrap.fill(legendaryActions, width = textWidth)
         
         if re.search("range", actions) or re.search("range", legendaryActions):
             rangedAttack = True
@@ -124,6 +130,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
         #    newMonster.append(legendaryActions)
         #newMonsters.append(newMonster)
 
+        
         Monster.objects.create(name = name, HP = int(HP), AC = int(AC), CR = CR, XP = XP,   speed = speed, stats = stats, skills = skills, attributes = attributes, actions = actions, legendaryActions = legendaryActions, rangedAttack = rangedAttack, pack = pack)
 
         print(f'name: {name}')

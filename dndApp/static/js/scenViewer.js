@@ -1,5 +1,3 @@
-console.log('yep')
-
 document.addEventListener('DOMContentLoaded', () => {
   console.log('scenViewer.js loaded (DOMContentLoaded)');
 
@@ -30,59 +28,70 @@ document.addEventListener('DOMContentLoaded', () => {
     return;  }
 
   console.log('scenario from sessionStorage', scenario);
+  for (let i = 0; i < scenario.monsters.length; i++) {
+      summon(scenario.monsters[i]);
+}
 });
 
 let monsterDiv = document.getElementById("monsterDiv");
 let monsterHealths = [];
 
 function summon(monster){
-    if (pass){
+  if (1 === 0){
         pass
         //if the monster is already there add another health mod
     }
     else {
+        console.log(monster);
         freshMonster = document.createElement("div");
         freshMonster.classList.add("monsterDescription");
         freshMonster.id = `${monster.name}`;
         monsterDiv.appendChild(freshMonster);
+        
         freshMonster.innerHTML = `
-        <h2>${monster[8]}</h2>
-        <p>${monster[9]}</p>
-        <p>HP: ${monster[2]}</p>
-        <p>AC: ${monster[0]}</p>
-        <P>Speed: ${monster[12]}</P>
-        <P>CR: ${monster[1]}, XP: ${monster[3]})}</P>
-        <p>${monster[13]}</p>
-        <p>${monster[11]}</p>
-        <p>${monster[5]}</p>
-        <p>${monsters[4]}</p>
-        <p>${monsters[7]}</p>`;
-        monsterHealths.append(monster[2]);
+        <h2>${monster.name}</h2>
+        <pre>${monster.pack}</pre>
+        <pre>HP: ${monster.HP}</pre>
+        <pre>AC: ${monster.AC}</pre>
+        <pre>Speed: ${monster.speed}</pre>
+        <pre>CR: ${monster.CR}, XP: ${monster.XP}</pre>
+        <pre>${monster.stats}</pre>
+        <pre>${monster.skills}</pre>
+        <pre>${monster.attributes}</pre>
+        <pre>${monster.actions}</pre>
+        <pre>${monster.legendaryActions}</pre>`;
+
+        monsterHealths.push(monster.HP);
         freshHealth = document.createElement("div");
         freshHealth.classList.add("monsterHealth");
         freshHealth.id = `${monster.name}Health`;
         freshMonster.appendChild(freshHealth);
+        
         freshHealth.innerHTML = `
-        <button class="minus1health" id="minus1Health${monsterHealths.length-1}>-1</button>
-        <button class="minus5health" id="minus5Health${monsterHealths.length-1}>-5</button>
-        <button class="minus20health" id="minus20Health${monsterHealths.length-1}>-20</button>
-        <button class="plus1health" id="plus1health${monsterHealths.length-1}>+1</button>
-        <p id="${monsterHealths.length-1}Health">HP: ${monster[2]}</p>`;
+        <button class="minus1health" id="minus1Health${monsterHealths.length-1}">-1</button>
+        <button class="minus5health" id="minus5Health${monsterHealths.length-1}">-5</button>
+        <button class="minus20health" id="minus20Health${monsterHealths.length-1}">-20</button>
+        <button class="plus1health" id="plus1Health${monsterHealths.length-1}">+1</button>
+        <p id="${monsterHealths.length-1}Health">HP: ${monster.HP}</p>`;
+        
         buttonChanges = [1,5,20];
         for (let i = 0; i < buttonChanges.length; i++) {
-          document.getElementById(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`).addEventListener("click", () => {
-              id = parseInt(this.id.replace(`minus${buttonChanges[i]}Health`, ""));
-              monsterHealths[id] -= 1;
+          console.log(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`);
+          document.getElementById(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`).addEventListener("click", (e) => {
+              id = parseInt(e.currentTarget.id.replace(`minus${buttonChanges[i]}Health`, ""));
+              monsterHealths[id] -= buttonChanges[i];
               document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
           })
         };
-        document.getElementById(`plus1Health${monsterHealths.length-1}`).addEventListener("click", () => {
-            id = parseInt(this.id.replace(`plus1Health`, ""));
+        document.getElementById(`plus1Health${monsterHealths.length-1}`).addEventListener("click", (e) => {
+            id = parseInt(e.currentTarget.id.replace(`plus1Health`, ""));
             monsterHealths[id] += 1;
             document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
         });
     }
 }
+
+
     
 /*function renderScenario(scenario) {
   const container = document.getElementById('scenarioContainer');
