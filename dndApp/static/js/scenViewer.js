@@ -28,9 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return;  }
 
   console.log('scenario from sessionStorage', scenario);
+  monsterDiv = document.getElementById("monsterDiv");
   for (let i = 0; i < scenario.monsters.length; i++) {
       summon(scenario.monsters[i]);
-}
+  }
 });
 
 let monsterDiv = document.getElementById("monsterDiv");
@@ -46,6 +47,12 @@ function summon(monster){
         freshMonster = document.createElement("div");
         freshMonster.classList.add("monsterDescription");
         freshMonster.id = `${monster.name}`;
+        freshMonster.style.padding = '1rem';
+        freshMonster.style.boxSizing = 'border-box';
+        freshMonster.style.backgroundColor = 'rgb(202, 210, 218)';
+        freshMonster.style.border = 'darkmagenta 2px dashed';
+        freshMonster.style.minWidth = '220px';
+        freshMonster.style.borderRadius = '6px';
         monsterDiv.appendChild(freshMonster);
         
         freshMonster.innerHTML = `

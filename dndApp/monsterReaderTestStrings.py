@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 import textwrap
 
-textWidth = 40
+textWidth = 60
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
@@ -30,6 +30,9 @@ except NameError:
     _SCRIPT_DIR = cwd / "dndApp" if (cwd / "dndApp").is_dir() else cwd
 
 MONSTERS_TXT_PATH = _SCRIPT_DIR / "monstersTest.txt"
+
+def seperateAttributes(string):
+    return re.sub(r"\. ([^. ]+)\.", r".\n\1.", string)
 
 with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
     lines = monsters.readlines()
@@ -87,6 +90,8 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
             CR = lines[i].split()[1]
             XP = ''.join(n for n in lines[i].split()[2] if n.isdigit())
         i += 1
+        skills = seperateAttributes(skills)
+        skills = "Skills:\n" + textwrap.fill(skills, width = textWidth) + "\n"
 
     #Adds all the lines from the attributes category into an array
         attributes = ""
@@ -95,14 +100,16 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
                 attributes += lines[i] + "\n"
             i += 1
         i += 1
-        attributes = textwrap.fill(attributes, width = textWidth)
+        attributes = seperateAttributes(attributes)
+        attributes = "Attributes:\n" + textwrap.fill(attributes, width = textWidth)+ "\n"
 
         actions = ""
         while lines[i].strip() != "Legendary actions" and not(lines[i].strip() == "" and i+1 < len(lines) and lines[i+1].strip() == ""):
             if lines[i].strip() != "":
                 actions += lines[i]
             i += 1
-        actions = textwrap.fill(actions, width = textWidth)
+        actions = seperateAttributes(actions)
+        actions = "Actions\n" + textwrap.fill(actions, width = textWidth) + "\n"
 
         legendaryActions = ""
         if i < len(lines) and lines[i].strip() == "Legendary actions":
@@ -110,7 +117,9 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
                 if lines[i].strip() != "":
                     legendaryActions += lines[i]
                 i += 1
-        legendaryActions = textwrap.fill(legendaryActions, width = textWidth)
+        if legendaryActions != "": 
+            legendaryActions = seperateAttributes(legendaryActions)
+            legendaryActions = "Legendary Actions:\n" + textwrap.fill(legendaryActions, width = textWidth) + "\n"
         
         if re.search("range", actions) or re.search("range", legendaryActions):
             rangedAttack = True

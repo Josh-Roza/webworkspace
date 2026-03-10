@@ -25,10 +25,30 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    gap: 1rem;
 }
 
 .monsterDescription {
     flex: 0 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 6px;
+
+    /* Debug: make padding and box visible in case other rules override */
+    padding: 1rem !important;
+    border: 2px dashed darkmagenta !important;
+    min-width: 220px;
+}
+
+/* Reset default margins for elements inside the monster card so padding is visible */
+.monsterDescription h2 {
+    margin: 0 0 0.5rem 0;
+}
+.monsterDescription pre,
+.monsterDescription p {
+    margin: 0 0 0.5rem 0;
+    white-space: pre-wrap; /* wrap long lines so padding is obvious */
 }
 
 .minus1health {
