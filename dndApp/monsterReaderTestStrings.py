@@ -32,7 +32,49 @@ except NameError:
 MONSTERS_TXT_PATH = _SCRIPT_DIR / "monstersTest.txt"
 
 def seperateAttributes(string):
-    return re.sub(r"\. ([^. ]+)\.", r".\n\1.", string)
+    # Normalize short headings (one or two words) so they appear on their own line.
+    # 1) When a period precedes the heading: ". Word." or ". Word Word." -> ".\nWord.\n"
+    # 2) When a colon/newline precedes the heading (e.g. "Attributes:\nIllumination.") -> keep prefix, add trailing newline.
+    # 3) When a heading starts a line ("^Illumination.") ensure it ends with a newline after the period.
+    # Use function-based replacements to avoid backreference expansion issues.
+
+    # Normalize multiple spaces after a period to a single space (fix ".  Word" cases)
+    string = re.sub(r"\.\s{2,}", ". ", string)
+
+    # 1) period-before pattern — place heading on its own line and add a blank line after it
+    string = re.sub(r"\.\s+((?:\S+)(?:\s+\S+)?)\.", lambda m: ".\n\n" + m.group(1) + ".\n\n", string)
+
+    # 2) colon/newline before pattern — keep prefix, add blank line after heading
+    string = re.sub(r"(\:\s*\n\s*)([A-Za-z]+(?:\s+[A-Za-z]+)?)\.", lambda m: m.group(1) + m.group(2) + ".\n\n", string)
+
+    # 3) heading at start of a line (ensure trailing blank line). Use multiline mode.
+    string = re.sub(r"(?m)^(\s*)([A-Za-z]+(?:\s+[A-Za-z]+)?)\.(?=\s)", lambda m: m.group(1) + m.group(2) + ".\n\n", string)
+
+    # Remove any leading spaces at the start of lines introduced by replacements
+    string = re.sub(r"(?m)\n[ \t]+", "\n", string)
+
+    # Collapse excessive blank lines to at most one blank line (i.e., two newlines)
+    string = re.sub(r"\n{3,}", "\n\n", string)
+
+    print(string)
+    return string
+
+
+def wrap_paragraphs(text, width=textWidth):
+    # Split into paragraphs on blank lines, preserve simple 1-2 word headings
+    parts = re.split(r"\n\s*\n", text.strip()) if text and text.strip() else []
+    out = []
+    for p in parts:
+        s = p.strip()
+        # treat a short heading (one or two words + period) as a paragraph to keep
+        if re.match(r'^[A-Za-z]+(?:\s+[A-Za-z]+)?\.$', s):
+            out.append(s)
+        elif s:
+            # collapse internal whitespace then wrap
+            collapsed = ' '.join(s.split())
+            out.append(textwrap.fill(collapsed, width=width))
+    # Join paragraphs with a single newline (no extra blank line)
+    return "\n".join(out)
 
 with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
     lines = monsters.readlines()
@@ -91,7 +133,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
             XP = ''.join(n for n in lines[i].split()[2] if n.isdigit())
         i += 1
         skills = seperateAttributes(skills)
-        skills = "Skills:\n" + textwrap.fill(skills, width = textWidth) + "\n"
+        skills = "Skills:\n" + wrap_paragraphs(skills, width=textWidth) + "\n"
 
     #Adds all the lines from the attributes category into an array
         attributes = ""
@@ -100,8 +142,9 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
                 attributes += lines[i] + "\n"
             i += 1
         i += 1
-        attributes = seperateAttributes(attributes)
-        attributes = "Attributes:\n" + textwrap.fill(attributes, width = textWidth)+ "\n"
+        if attributes != "":
+            attributes = seperateAttributes(attributes)
+            attributes = "Attributes:\n" + wrap_paragraphs(attributes, width=textWidth) + "\n"
 
         actions = ""
         while lines[i].strip() != "Legendary actions" and not(lines[i].strip() == "" and i+1 < len(lines) and lines[i+1].strip() == ""):
@@ -109,7 +152,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
                 actions += lines[i]
             i += 1
         actions = seperateAttributes(actions)
-        actions = "Actions\n" + textwrap.fill(actions, width = textWidth) + "\n"
+        actions = "Actions\n" + wrap_paragraphs(actions, width=textWidth) + "\n"
 
         legendaryActions = ""
         if i < len(lines) and lines[i].strip() == "Legendary actions":
@@ -119,7 +162,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
                 i += 1
         if legendaryActions != "": 
             legendaryActions = seperateAttributes(legendaryActions)
-            legendaryActions = "Legendary Actions:\n" + textwrap.fill(legendaryActions, width = textWidth) + "\n"
+            legendaryActions = "Legendary Actions:\n" + wrap_paragraphs(legendaryActions, width=textWidth) + "\n"
         
         if re.search("range", actions) or re.search("range", legendaryActions):
             rangedAttack = True
@@ -132,29 +175,26 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
             if actionsList[n].isdigit():
                 if int(actionsList[n]) > 25:
                     rangedAttack = True
-                
-
-        #newMonster = [name, pack, HP, AC, CR, rangedAttack, speed, stats, skills, attributes, actions]
-        #if legendaryActions != "":
-        #    newMonster.append(legendaryActions)
-        #newMonsters.append(newMonster)
 
         
-        Monster.objects.create(name = name, HP = int(HP), AC = int(AC), CR = CR, XP = XP,   speed = speed, stats = stats, skills = skills, attributes = attributes, actions = actions, legendaryActions = legendaryActions, rangedAttack = rangedAttack, pack = pack)
-
-        print(f'name: {name}')
-        print(f'HP: {HP}')
-        print(f'AC: {AC}')
-        print(f'CR {CR}')
-        print(f'XP: {XP}')
-        print(f'speed: {speed}')
-        print(f'pack: {pack}')
-        print(f'Range: {rangedAttack}')
-        print(f'stats: {stats}')
-        print(f'skills: {skills}')
-        print(f'attributes: {attributes}')
-        print(f'actions: {actions}')
-        print(f'legendaryActions: {legendaryActions}')
+        # Ensure we don't create duplicates: remove any existing monsters with the same name,
+        # then create a fresh record. Use the original CR/XP strings to avoid int() errors.
+        Monster.objects.filter(name=name).delete()
+        Monster.objects.create(
+            name=name,
+            HP=int(HP),
+            AC=int(AC),
+            CR= CR,
+            XP= int(XP),
+            speed=speed,
+            stats=stats,
+            skills=skills,
+            attributes=attributes,
+            actions=actions,
+            legendaryActions=legendaryActions,
+            rangedAttack=rangedAttack,
+            pack=pack,
+        )
 
         if i + 2 >= len(lines):
             print('finished')
@@ -162,7 +202,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
         else: 
             i += 2
     
-    #print(newMonsters)
+
         
 
 

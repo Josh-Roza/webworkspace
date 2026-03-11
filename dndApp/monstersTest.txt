@@ -954,3 +954,898 @@ Frightening Gaze (Costs 2 Actions). The lich fixes its gaze on one creature it c
 
 Disrupt Life (Costs 3 Actions). Each non‐undead creature within 20 feet of the lich must make a DC 18 Constitution saving throw against this magic, taking 21 (6d6) necrotic damage on a failed save, or half as much damage on a successful one.
 
+
+Abominable Yeti
+[ Yéti abominable ]
+Huge monstrosity, chaotic evil
+Armor Class 15 (natural armor)
+Hit Points 137 (11d12 + 66)
+Speed 40 ft., climb 40 ft.
+STR
+24 (+7)DEX
+10 (+0)CON
+22 (+6)INT
+9 (-1)WIS
+13 (+1)CHA
+9 (-1)
+Skills Perception +5, Stealth +4
+Damage Immunities cold
+Senses darkvision 60 ft., passive Perception 15
+Languages Yeti
+Challenge 9 (5000 XP)
+Fear of Fire. If the yeti takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.
+
+Keen Smell. The yeti has advantage on Wisdom (Perception) checks that rely on smell.
+
+Snow Camouflage. The yeti has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.
+
+Actions
+Multiattack. The yeti can use its Chilling Gaze and makes two claw attacks.
+
+Claw. Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage plus 7 (2d6) cold damage.
+
+Chilling Gaze. The yeti targets one creature it can see within 30 feet of it. If the target can see the yeti, the target must succeed on a DC 18 Constitution saving throw against this magic or take 21 (6d6) cold damage and then be paralyzed for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends on it, the target is immune to this yeti's gaze for 1 hour.
+
+Cold Breath (Recharge 6). The yeti exhales a 30-foot cone of frigid air. Each creature in that area must make a DC 18 Constitution saving throw, taking 45 (10d8) cold damage on a failed save, or half as much damage on a successful one.
+
+
+Androsphinx
+[ Androsphinx ]
+Large monstrosity, lawful neutral
+Armor Class 17 (natural armor)
+Hit Points 199 (19d10 + 95)
+Speed 40 ft., fly 60 ft.
+STR
+22 (+6)DEX
+10 (+0)CON
+20 (+5)INT
+16 (+3)WIS
+18 (+4)CHA
+23 (+6)
+Saving Throws Dex +6, Con +11, Int +9, Wis +10
+Skills Arcana +9, Perception +10, Religion +15
+Damage Immunities psychic; bludgeoning, piercing and slashing from nonmagical attacks
+Condition Immunities charmed, frightened
+Senses truesight 120 ft., passive Perception 20
+Languages Common, Sphinx
+Challenge 17 (18000 XP)
+Inscrutable. The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.
+
+Magic Weapons. The sphinx's weapon attacks are magical.
+
+Spellcasting. The sphinx is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 18, +10 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following cleric spells prepared:
+
+Cantrips (at will): sacred flame, spare the dying, thaumaturgy
+1st level (4 slots): command, detect evil and good, detect magic
+2nd level (3 slots): lesser restoration, zone of truth
+3rd level (3 slots): dispel magic, tongues
+4th level (3 slots): banishment, freedom of movement
+5th level (2 slots): flame strike, greater restoration
+6th level (1 slot): heroes' feast
+Actions
+Multiattack. The sphinx makes two claw attacks.
+
+Claw. Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) slashing damage.
+
+Roar (3/Day). The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a saving throw.
+
+First Roar. Each creature that fails a DC 18 Wisdom saving throw is frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+Second Roar. Each creature that fails a DC 18 Wisdom saving throw is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+Third Roar. Each creature makes a DC 18 Constitution saving throw. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone.
+
+Legendary actions
+The sphinx can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The sphinx regains spent legendary actions at the start of its turn.
+
+Claw Attack. The sphinx makes one claw attack.
+
+Teleport (Costs 2 Actions). The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+Cast a Spell (Costs 3 Actions). The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.
+
+
+Ankheg
+[ Ankheg ]
+Large monstrosity, unaligned
+Armor Class 14 (natural armor), 11 while prone
+Hit Points 39 (6d10 + 6)
+Speed 30 ft., burrow 10 ft.
+STR
+17 (+3)DEX
+11 (+0)CON
+13 (+1)INT
+1 (-5)WIS
+13 (+1)CHA
+6 (-2)
+Senses darkvision 60 ft., tremorsense 60 ft., passive Perception 11
+Languages —
+Challenge 2 (450 XP)
+Actions
+Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.
+
+Acid Spray (Recharge 6). The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.
+
+
+Basilisk
+[ Basilic ]
+Medium monstrosity, unaligned
+Armor Class 15 (natural armor)
+Hit Points 52 (8d8 + 16)
+Speed 20 ft.
+STR
+16 (+3)DEX
+8 (-1)CON
+15 (+2)INT
+2 (-4)WIS
+8 (-1)CHA
+7 (-2)
+Senses darkvision 60 ft., passive Perception 9
+Languages —
+Challenge 3 (700 XP)
+Petrifying Gaze. If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic. A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save. If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze.
+
+Actions
+Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.
+
+
+Carrion Crawler
+[ Charognard rampant ]
+Large monstrosity, unaligned
+Armor Class 13 (natural armor)
+Hit Points 51 (6d10 + 18)
+Speed 30 ft., climb 30 ft.
+STR
+14 (+2)DEX
+13 (+1)CON
+16 (+3)INT
+1 (-5)WIS
+12 (+1)CHA
+5 (-3)
+Skills Perception +3
+Senses darkvision 60 ft., passive Perception 13
+Languages —
+Challenge 2 (450 XP)
+Keen Smell. The carrion crawler has advantage on Wisdom (Perception) checks that rely on smell.
+
+Spider Climb. The carrion crawler can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+Actions
+Multiattack. The carrion crawler makes two attacks: one with its tentacles and one with its bite.
+
+Tentacles. Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 4 (1d4 + 2) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.
+
+Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.
+
+
+Centaur
+[ Centaure ]
+Large monstrosity, neutral good
+Armor Class 12
+Hit Points 45 (6d10 + 12)
+Speed 50 ft.
+STR
+18 (+4)DEX
+14 (+2)CON
+14 (+2)INT
+9 (-1)WIS
+13 (+1)CHA
+11 (+0)
+Skills Athletics +6, Perception +3, Survival +3
+Senses passive Perception 13
+Languages Elvish, Sylvan
+Challenge 2 (450 XP)
+Charge. If the centaur moves at least 30 feet straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 (3d6) piercing damage.
+
+Actions
+Multiattack. The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.
+
+Pike. Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) piercing damage.
+
+Hooves. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.
+
+Longbow. Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.
+
+
+Cockatrice
+[ Cockatrice ]
+Small monstrosity, unaligned
+Armor Class 11
+Hit Points 27 (6d6 + 6)
+Speed 20 ft., fly 40 ft.
+STR
+6 (-2)DEX
+12 (+1)CON
+12 (+1)INT
+2 (-4)WIS
+13 (+1)CHA
+5 (-3)
+Senses darkvision 60 ft., passive Perception 11
+Languages —
+Challenge 1/2 (100 XP)
+Actions
+Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.
+
+
+Darkmantle
+[ Mante obscure ]
+Small monstrosity, unaligned
+Armor Class 11
+Hit Points 22 (5d6 + 5)
+Speed 10 ft., fly 30 ft.
+STR
+16 (+3)DEX
+12 (+1)CON
+13 (+1)INT
+2 (-4)WIS
+10 (+0)CHA
+5 (-3)
+Skills Stealth +3
+Senses blindsight 60 ft., passive Perception 10
+Languages —
+Challenge 1/2 (100 XP)
+Echolocation. The darkmantle can't use its blindsight while deafened.
+
+False Appearance. While the darkmantle remains motionless, it is indistinguishable from a cave formation such as a stalactite or stalagmite.
+
+Actions
+Crush. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target's head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way. While attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle's speed also becomes 0, it can't benefit from any bonus to its speed, and it moves with the target. A creature can detach the darkmantle by making a successful DC 13 Strength check as an action. On its turn, the darkmantle can detach itself from the target by using 5 feet of movement.
+
+Darkness Aura (1/Day). A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can't penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
+
+
+Death Dog
+[ Chien du trépas ]
+Medium monstrosity, neutral evil
+Armor Class 12
+Hit Points 39 (6d8 + 12)
+Speed 40 ft.
+STR
+15 (+2)DEX
+14 (+2)CON
+14 (+2)INT
+3 (-4)WIS
+13 (+1)CHA
+6 (-2)
+Skills Perception +5, Stealth +4
+Senses darkvision 120 ft., passive Perception 15
+Languages —
+Challenge 1 (200 XP)
+Two-Headed. The dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.
+
+Actions
+Multiattack. The dog makes two bite attacks.
+
+Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.
+
+
+Displacer Beast
+[ Bête éclipsante ]
+Large monstrosity, lawful evil
+Armor Class 13 (natural armor)
+Hit Points 85 (10d10 + 30)
+Speed 40 ft.
+STR
+18 (+4)DEX
+15 (+2)CON
+16 (+3)INT
+6 (-2)WIS
+12 (+1)CHA
+8 (-1)
+Senses darkvision 60 ft., passive Perception 11
+Languages —
+Challenge 3 (700 XP)
+Avoidance. If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+
+Displacement. The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0.
+
+Actions
+Multiattack. The displacer beast makes two attacks with its tentacles.
+
+Tentacle. Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) piercing damage.
+
+
+Drider
+[ Drider ]
+Large monstrosity, chaotic evil
+Armor Class 19 (natural armor)
+Hit Points 123 (13d10 + 52)
+Speed 30 ft., climb 30 ft.
+STR
+16 (+3)DEX
+16 (+3)CON
+18 (+4)INT
+13 (+1)WIS
+14 (+2)CHA
+12 (+1)
+Skills Perception +5, Stealth +9
+Senses darkvision 120 ft., passive Perception 15
+Languages Elvish, Undercommon
+Challenge 6 (2300 XP)
+Fey Ancestry. The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.
+
+Innate Spellcasting. The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:
+
+At will: dancing lights
+1/day each: darkness, faerie fire
+Spider Climb. The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+Sunlight Sensitivity. While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+Web Walker. The drider ignores movement restrictions caused by webbing.
+
+Actions
+Multiattack. The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.
+
+Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage.
+
+Longsword. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.
+
+Longbow. Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) poison damage.
+
+
+Guardian Naga
+[ Naga gardien ]
+Large monstrosity, lawful good
+Armor Class 18 (natural armor)
+Hit Points 127 (15d10 + 45)
+Speed 40 ft.
+STR
+19 (+4)DEX
+18 (+4)CON
+16 (+3)INT
+16 (+3)WIS
+19 (+4)CHA
+18 (+4)
+Saving Throws Dex +8, Con +7, Int +7, Wis +8, Cha +8
+Damage Immunities poison
+Condition Immunities charmed, poisoned
+Senses darkvision 60 ft., passive Perception 14
+Languages Celestial, Common
+Challenge 10 (5900 XP)
+Rejuvenation. If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a wish spell can prevent this trait from functioning.
+
+Spellcasting. The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:
+
+Cantrips (at will): mending, sacred flame, thaumaturgy
+1st level (4 slots): command, cure wounds, shield of faith
+2nd level (3 slots): calm emotions, hold person
+3rd level (3 slots): bestow curse, clairvoyance
+4th level (3 slots): banishment, freedom of movement
+5th level (2 slots): flame strike, geas
+6th level (1 slot): true seeing
+Actions
+Bite. Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
+
+Spit Poison. Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.
+
+
+Hippogriff
+[ Hippogriffe ]
+Large monstrosity, unaligned
+Armor Class 11
+Hit Points 19 (3d10 + 3)
+Speed 40 ft., fly 60 ft.
+STR
+17 (+3)DEX
+13 (+1)CON
+13 (+1)INT
+2 (-4)WIS
+12 (+1)CHA
+8 (-1)
+Skills Perception +5
+Senses passive Perception 15
+Languages —
+Challenge 1 (200 XP)
+Keen Sight. The hippogriff has advantage on Wisdom (Perception) checks that rely on sight.
+
+Actions
+Multiattack. The hippogriff makes two attacks: one with its beak and one with its claws.
+
+Beak. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.
+
+Claws. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.
+
+
+Manticore
+[ Manticore ]
+Large monstrosity, lawful evil
+Armor Class 14 (natural armor)
+Hit Points 68 (8d10 + 24)
+Speed 30 ft., fly 50 ft.
+STR
+17 (+3)DEX
+16 (+3)CON
+17 (+3)INT
+7 (-2)WIS
+12 (+1)CHA
+8 (-1)
+Senses darkvision 60 ft., passive Perception 11
+Languages Common
+Challenge 3 (700 XP)
+Tail Spike Regrowth. The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest.
+
+Actions
+Multiattack. The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.
+
+Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
+
+Claw. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.
+
+Tail Spike. Ranged Weapon Attack: +5 to hit, range 100/200 ft., one target. Hit: 7 (1d8 + 3) piercing damage.
+
+
+Owlbear
+[ Ours-hibou ]
+Large monstrosity, unaligned
+Armor Class 13 (natural armor)
+Hit Points 59 (7d10 + 21)
+Speed 40 ft.
+STR
+20 (+5)DEX
+12 (+1)CON
+17 (+3)INT
+3 (-4)WIS
+12 (+1)CHA
+7 (-2)
+Skills Perception +3
+Senses darkvision 60 ft., passive Perception 13
+Languages —
+Challenge 3 (700 XP)
+Keen Sight and Smell. The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell.
+
+Actions
+Multiattack. The owlbear makes two attacks: one with its beak and one with its claws.
+
+Beak. Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 10 (1d10 + 5) piercing damage.
+
+Claws. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.
+
+
+Medusa
+[ Méduse ]
+Medium monstrosity, lawful evil
+Armor Class 15 (natural armor)
+Hit Points 127 (17d8 + 51)
+Speed 30 ft.
+STR
+10 (+0)DEX
+15 (+2)CON
+16 (+3)INT
+12 (+1)WIS
+13 (+1)CHA
+15 (+2)
+Skills Deception +5, Insight +4, Perception +4, Stealth +5
+Senses darkvision 60 ft., passive Perception 14
+Languages Common
+Challenge 6 (2300 XP)
+Petrifying Gaze. When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a DC 14 Constitution saving throw if the medusa isn't incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, a creature that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic. Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save. If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze.
+
+Actions
+Multiattack. The medusa makes either three melee attacks -one with its snake hair and two with its shortsword- or two ranged attacks with its longbow.
+
+Snake Hair. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 14 (4d6) poison damage.
+
+Shortsword. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+
+Longbow. Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 7 (2d6) poison damage.
+
+
+Purple Worm
+[ Ver pourpre ]
+Gargantuan monstrosity, unaligned
+Armor Class 18 (natural armor)
+Hit Points 247 (15d20 + 90)
+Speed 50 ft., burrow 30 ft.
+STR
+28 (+9)DEX
+7 (-2)CON
+22 (+6)INT
+1 (-5)WIS
+8 (-1)CHA
+4 (-3)
+Saving Throws Con +11, Wis +4
+Senses blindsight 30 ft., tremorsense 60 ft., passive Perception 9
+Languages —
+Challenge 15 (13000 XP)
+Tunneler. The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.
+
+Actions
+Multiattack. The worm makes two attacks: one with its bite and one with its stinger.
+
+Bite. Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 22 (3d8 + 9) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns. If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
+
+Tail Stinger. Melee Weapon Attack: +14 to hit, reach 10 ft., one creature. Hit: 19 (3d6 + 9) piercing damage, and the target must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.
+
+
+Winter Wolf
+[ Loup arctique ]
+Large monstrosity, neutral evil
+Armor Class 13 (natural armor)
+Hit Points 75 (10d10 + 20)
+Speed 50 ft.
+STR
+18 (+4)DEX
+13 (+1)CON
+14 (+2)INT
+7 (-2)WIS
+12 (+1)CHA
+8 (-1)
+Skills Perception +5, Stealth +3
+Damage Immunities cold
+Senses passive Perception 15
+Languages Common, Giant, Winter Wolf
+Challenge 3 (700 XP)
+Keen Hearing and Smell. The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+Pack Tactics. The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
+
+Snow Camouflage. The wolf has advantage on Dexterity (Stealth) checks made to hide in snowy terrain.
+
+Actions
+Bite. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.
+
+Cold Breath (Recharge 5-6). The wolf exhales a blast of freezing wind in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.
+
+
+Worg
+[ Worg ]
+Large monstrosity, neutral evil
+Armor Class 13 (natural armor)
+Hit Points 26 (4d10 + 4)
+Speed 50 ft.
+STR
+16 (+3)DEX
+13 (+1)CON
+13 (+1)INT
+7 (-2)WIS
+11 (+0)CHA
+8 (-1)
+Skills Perception +4
+Senses darkvision 60 ft., passive Perception 14
+Languages Goblin, Worg
+Challenge 1/2 (100 XP)
+Keen Hearing and Smell. The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+Actions
+Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.
+
+
+Hydra
+[ Hydre ]
+Huge monstrosity, unaligned
+Armor Class 15 (natural armor)
+Hit Points 172 (15d12 + 75)
+Speed 30 ft., swim 30 ft.
+STR
+20 (+5)DEX
+12 (+1)CON
+20 (+5)INT
+2 (-4)WIS
+10 (+0)CHA
+7 (-2)
+Skills Perception +6
+Senses darkvision 60 ft., passive Perception 16
+Languages —
+Challenge 8 (3900 XP)
+Hold Breath. The hydra can hold its breath for 1 hour.
+
+Multiple Heads. The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious. Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies. At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.
+
+Reactive Heads. For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.
+
+Wakeful. While the hydra sleeps, at least one of its heads is awake.
+
+Actions
+Multiattack. The hydra makes as many bite attacks as it has heads.
+
+Bite. Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) piercing damage.
+
+
+Air Elemental
+[ Élémentaire de l'air ]
+Large elemental, neutral
+Armor Class 15
+Hit Points 90 (12d10 + 24)
+Speed 0 ft., fly 90 ft. (hover)
+STR
+14 (+2)DEX
+20 (+5)CON
+14 (+2)INT
+6 (-2)WIS
+10 (+0)CHA
+6 (-2)
+Damage Resistances lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities poison
+Condition Immunities exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious
+Senses darkvision 60 ft., passive Perception 10
+Languages Auran
+Challenge 5 (1800 XP)
+Air Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+
+Actions
+Multiattack. The elemental makes two slam attacks.
+
+Slam. Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.
+
+Whirlwind (Recharge 4-6). Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone. If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.
+
+
+Earth Elemental
+[ Élémentaire de la terre ]
+Large elemental, neutral
+Armor Class 17 (natural armor)
+Hit Points 126 (12d10 + 60)
+Speed 30 ft., burrow 30 ft.
+STR
+20 (+5)DEX
+8 (-1)CON
+20 (+5)INT
+5 (-3)WIS
+10 (+0)CHA
+5 (-3)
+Damage Vulnerabilities thunder
+Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities poison
+Condition Immunities exhaustion, paralyzed, petrified, poisoned, unconscious
+Senses darkvision 60 ft., tremorsense 60 ft., passive Perception 10
+Languages Terran
+Challenge 5 (1800 XP)
+Earth Glide. The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.
+
+Siege Monster. The elemental deals double damage to objects and structures.
+
+Actions
+Multiattack. The elemental makes two slam attacks.
+
+Slam. Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.
+
+
+Fire Elemental
+[ Élémentaire du feu ]
+Large elemental, neutral
+Armor Class 13
+Hit Points 102 (12d10 + 36)
+Speed 50 ft.
+STR
+10 (+0)DEX
+17 (+3)CON
+16 (+3)INT
+6 (-2)WIS
+10 (+0)CHA
+7 (-2)
+Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities fire, poison
+Condition Immunities exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious
+Senses darkvision 60 ft., passive Perception 10
+Languages Ignan
+Challenge 5 (1800 XP)
+Fire Form. The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.
+
+Illumination. The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.
+
+Water Susceptibility. For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.
+
+Actions
+Multiattack. The elemental makes two touch attacks.
+
+Touch. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns.
+
+
+Water Elemental
+[ Élémentaire de l'eau ]
+Large elemental, neutral
+Armor Class 14 (natural armor)
+Hit Points 114 (12d10 + 48)
+Speed 30 ft., swim 90 ft.
+STR
+18 (+4)DEX
+14 (+2)CON
+18 (+4)INT
+5 (-3)WIS
+10 (+0)CHA
+8 (-1)
+Damage Resistances acid; bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities poison
+Condition Immunities exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious
+Senses darkvision 60 ft., passive Perception 10
+Languages Aquan
+Challenge 5 (1800 XP)
+Water Form. The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+
+Freeze. If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn.
+
+Actions
+Multiattack. The elemental makes two slam attacks.
+
+Slam. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
+
+Whelm (Recharge 4-6). Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space. The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength check and succeeding.
+
+
+Dust Mephit
+[ Méphite poussiéreux ]
+Small elemental, neutral evil
+Armor Class 12
+Hit Points 17 (5d6)
+Speed 30 ft., fly 30 ft.
+STR
+5 (-3)DEX
+14 (+2)CON
+10 (+0)INT
+9 (-1)WIS
+11 (+0)CHA
+10 (+0)
+Skills Perception +2, Stealth +4
+Damage Vulnerabilities fire
+Damage Immunities poison
+Condition Immunities poisoned
+Senses darkvision 60 ft., passive Perception 12
+Languages Auran, Terran
+Challenge 1/2 (100 XP)
+Death Burst. When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.
+
+Innate Spellcasting (1/Day). The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma.
+
+Actions
+Claws. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) slashing damage.
+
+Blinding Breath (Recharge 6). The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+
+Ice Mephit
+[ Méphite gelé ]
+Small elemental, neutral evil
+Armor Class 11
+Hit Points 21 (6d6)
+Speed 30 ft., fly 30 ft.
+STR
+7 (-2)DEX
+13 (+1)CON
+10 (+0)INT
+9 (-1)WIS
+11 (+0)CHA
+12 (+1)
+Skills Perception +2, Stealth +3
+Damage Vulnerabilities bludgeoning, fire
+Damage Immunities cold, poison
+Condition Immunities poisoned
+Senses darkvision 60 ft., passive Perception 12
+Languages Aquan, Auran
+Challenge 1/2 (100 XP)
+Death Burst. When the mephit dies, it explodes in a burst of jagged ice. Each creature within 5 feet of it must make a DC 10 Dexterity saving throw, taking 4 (1d8) slashing damage on a failed save, or half as much damage on a successful one.
+
+False Appearance. While the mephit remains motionless, it is indistinguishable from an ordinary shard of ice.
+
+Innate Spellcasting (1/Day). The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma.
+
+Actions
+Claws. Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) cold damage.
+
+Frost Breath (Recharge 6). The mephit exhales a 15-foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.
+
+
+Salamander
+[ Salamandre ]
+Large elemental, neutral evil
+Armor Class 15 (natural armor)
+Hit Points 90 (12d10 + 24)
+Speed 30 ft.
+STR
+18 (+4)DEX
+14 (+2)CON
+15 (+2)INT
+11 (+0)WIS
+10 (+0)CHA
+12 (+1)
+Damage Vulnerabilities cold
+Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities fire
+Senses darkvision 60 ft., passive Perception 10
+Languages Ignan
+Challenge 5 (1800 XP)
+Heated Body. A creature that touches the salamander or hits it with a melee attack while within 5 feet of it takes 7 (2d6) fire damage.
+
+Heated Weapons. Any metal melee weapon the salamander wields deals an extra 3 (1d6) fire damage on a hit (included in the attack).
+
+Actions
+Multiattack. The salamander makes two attacks: one with its spear and one with its tail.
+
+Spear. Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20 ft./60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.
+
+Tail. Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 7 (2d6) fire damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, the salamander can automatically hit the target with its tail, and the salamander can't make tail attacks against other targets.
+
+
+Fire Snake
+[ Serpent de feu ]
+Medium elemental, neutral evil
+Armor Class 14 (natural armor)
+Hit Points 22 (5d8)
+Speed 30 ft.
+STR
+12 (+1)DEX
+14 (+2)CON
+11 (+0)INT
+7 (-2)WIS
+10 (+0)CHA
+8 (-1)
+Damage Vulnerabilities cold
+Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks
+Damage Immunities fire
+Senses darkvision 60 ft., passive Perception 10
+Languages understands Ignan but can't speak
+Challenge 1 (200 XP)
+Heated Body. A creature that touches the snake or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage.
+
+Actions
+Multiattack. The snake makes two attacks: one with its bite and one with its tail.
+
+Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 3 (1d6) fire damage.
+
+Tail. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage plus 3 (1d6) fire damage.
+
+
+Gargoyle
+[ Gargouille ]
+Medium elemental, chaotic evil
+Armor Class 15 (natural armor)
+Hit Points 52 (7d8 + 21)
+Speed 30 ft., fly 60 ft.
+STR
+15 (+2)DEX
+11 (+0)CON
+16 (+3)INT
+6 (-2)WIS
+11 (+0)CHA
+7 (-2)
+Damage Resistances bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine
+Damage Immunities poison
+Condition Immunities exhaustion, petrified, poisoned
+Senses darkvision 60 ft., passive Perception 10
+Languages Terran
+Challenge 2 (450 XP)
+False Appearance. While the gargoyle remains motionless, it is indistinguishable from an inanimate statue.
+
+Actions
+Multiattack. The gargoyle makes two attacks: one with its bite and one with its claws.
+
+Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+
+Claws. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.
+
+
+Marid
+[ Maride ]
+Large elemental, chaotic neutral
+Armor Class 17 (natural armor)
+Hit Points 229 (17d10 + 136)
+Speed 30 ft., fly 60 ft., swim 90 ft.
+STR
+22 (+6)DEX
+12 (+1)CON
+26 (+8)INT
+18 (+4)WIS
+17 (+3)CHA
+18 (+4)
+Saving Throws Dex +5, Wis +7, Cha +8
+Damage Resistances acid, cold, lightning
+Senses blindsight 30 ft., darkvision 120 ft., passive Perception 13
+Languages Aquan
+Challenge 11 (7200 XP)
+Amphibious. The marid can breathe air and water.
+
+Elemental Demise. If the marid dies, its body disintegrates into a burst of water and foam, leaving behind only equipment the marid was wearing or carrying.
+
+Innate Spellcasting. The marid's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:
+
+At will: create or destroy water, detect evil and good, detect magic, fog cloud, purify food and drink
+3/day each: tongues, water breathing, water walk
+1/day each: conjure elemental (water elemental only), control water, gaseous form, invisibility, plane shift
+Actions
+Multiattack. The marid makes two trident attacks.
+
+Trident. Melee or Ranged Weapon Attack: +10 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 13 (2d6 + 6) piercing damage, or 15 (2d8 + 6) piercing damage if used with two hands to make a melee attack.
+
+Water jet. The marid magically shoots water in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw. On a failure, a target takes 21 (6d6) bludgeoning damage and, if it is Huge or smaller, is pushed up to 20 feet away from the marid and knocked prone. On a success, a target takes half the bludgeoning damage, but is neither pushed nor knocked prone.
+
+

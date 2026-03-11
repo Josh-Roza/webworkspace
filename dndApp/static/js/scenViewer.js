@@ -37,10 +37,34 @@ document.addEventListener('DOMContentLoaded', () => {
 let monsterDiv = document.getElementById("monsterDiv");
 let monsterHealths = [];
 
+function checkHealths(){
+  for (let i = 0; i < monsterHealths.length; i++) {
+    if (monsterHealths[i] <= 0) {
+      const btnMinus1 = document.getElementById(`minus1Health${i}`);
+      const btnMinus5 = document.getElementById(`minus5Health${i}`);
+      const btnMinus20 = document.getElementById(`minus20Health${i}`);
+      const btnPlus1 = document.getElementById(`plus1Health${i}`);
+      const hpDisplay = document.getElementById(`${i}Health`);
+
+      if (btnMinus1) btnMinus1.disabled = true
+        btnMinus1.hidden = true;
+      if (btnMinus5) btnMinus5.disabled = true;
+        btnMinus5.hidden = true;
+      if (btnMinus20) btnMinus20.disabled = true;
+        btnMinus20.hidden = true;
+      if (btnPlus1) btnPlus1.disabled = true;
+        btnPlus1.hidden = true;
+      if (hpDisplay) hpDisplay.textContent = `HP: 0`;
+        hpDisplay.hidden = true;
+      monsterHealths[i] = 100;
+    }
+  }
+}
+
 function summon(monster){
-  if (1 === 0){
-        pass
-        //if the monster is already there add another health mod
+  const existingMonster = document.getElementById(monster.name);
+  if (existingMonster) {
+      createButtons(monster, existingMonster);
     }
     else {
         console.log(monster);
@@ -68,34 +92,40 @@ function summon(monster){
         <pre>${monster.actions}</pre>
         <pre>${monster.legendaryActions}</pre>`;
 
-        monsterHealths.push(monster.HP);
-        freshHealth = document.createElement("div");
-        freshHealth.classList.add("monsterHealth");
-        freshHealth.id = `${monster.name}Health`;
-        freshMonster.appendChild(freshHealth);
-        
-        freshHealth.innerHTML = `
-        <button class="minus1health" id="minus1Health${monsterHealths.length-1}">-1</button>
-        <button class="minus5health" id="minus5Health${monsterHealths.length-1}">-5</button>
-        <button class="minus20health" id="minus20Health${monsterHealths.length-1}">-20</button>
-        <button class="plus1health" id="plus1Health${monsterHealths.length-1}">+1</button>
-        <p id="${monsterHealths.length-1}Health">HP: ${monster.HP}</p>`;
-        
-        buttonChanges = [1,5,20];
-        for (let i = 0; i < buttonChanges.length; i++) {
-          console.log(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`);
-          document.getElementById(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`).addEventListener("click", (e) => {
-              id = parseInt(e.currentTarget.id.replace(`minus${buttonChanges[i]}Health`, ""));
-              monsterHealths[id] -= buttonChanges[i];
-              document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
-          })
-        };
-        document.getElementById(`plus1Health${monsterHealths.length-1}`).addEventListener("click", (e) => {
-            id = parseInt(e.currentTarget.id.replace(`plus1Health`, ""));
-            monsterHealths[id] += 1;
-            document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
-        });
+        createButtons(monster,freshMonster);
     }
+}
+
+function createButtons(monster,div){
+    monsterHealths.push(monster.HP);
+    freshHealth = document.createElement("div");
+    freshHealth.classList.add("monsterHealth");
+    freshHealth.id = `${monster.name}Health`;
+    div.appendChild(freshHealth);
+    
+    freshHealth.innerHTML = `
+    <button class="minus1health" id="minus1Health${monsterHealths.length-1}">-1</button>
+    <button class="minus5health" id="minus5Health${monsterHealths.length-1}">-5</button>
+    <button class="minus20health" id="minus20Health${monsterHealths.length-1}">-20</button>
+    <button class="plus1health" id="plus1Health${monsterHealths.length-1}">+1</button>
+    <p id="${monsterHealths.length-1}Health">HP: ${monster.HP}</p>`;
+
+    buttonChanges = [1,5,20];
+    for (let i = 0; i < buttonChanges.length; i++) {
+      console.log(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`);
+      document.getElementById(`minus${buttonChanges[i]}Health${monsterHealths.length-1}`).addEventListener("click", (e) => {
+          id = parseInt(e.currentTarget.id.replace(`minus${buttonChanges[i]}Health`, ""));
+          monsterHealths[id] -= buttonChanges[i];
+          document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
+          checkHealths();
+      })
+    };
+    document.getElementById(`plus1Health${monsterHealths.length-1}`).addEventListener("click", (e) => {
+        id = parseInt(e.currentTarget.id.replace(`plus1Health`, ""));
+        monsterHealths[id] += 1;
+        document.getElementById(`${id}Health`).textContent = `HP: ${monsterHealths[id]}`;
+        checkHealths();
+    });
 }
 
 
@@ -116,3 +146,10 @@ function summon(monster){
   });
   container.appendChild(list);
 }*/
+
+// Expose helpers for manual testing from DevTools (some script loaders run in module scope)
+if (typeof window !== 'undefined') {
+  window.checkHealths = checkHealths;
+  window.monsterHealths = monsterHealths;
+  window.summon = summon;
+}
