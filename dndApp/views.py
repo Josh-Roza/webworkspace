@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views.decorators.csrf import ensure_csrf_cookie
 from django.http import HttpResponse
 import json
 from django.http import JsonResponse, HttpResponseBadRequest
@@ -7,8 +8,9 @@ from django.shortcuts import render
 from dndApp import buildEncounter
 
 def homePage(request):
-    return render(request, 'index.html')
+    return redirect('scenGen')
 
+@ensure_csrf_cookie
 def scenGen(request):
     return render(request, 'scenGen.html')
 

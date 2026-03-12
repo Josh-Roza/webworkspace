@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+if DEBUG:
+    SECURE_CROSS_ORIGIN_OPENER_POLICY = None
+    SECURE_CROSS_ORIGIN_EMBEDDER_POLICY = None
+
 # Directory where collectstatic will gather all static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

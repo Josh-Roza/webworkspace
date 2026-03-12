@@ -76,10 +76,12 @@ function generateScenario() {
     }
 
     const csrftoken = getCookie('csrftoken');
+    console.log('csrftoken:', csrftoken);
 
     // POST to server API, save response to sessionStorage and open scenViewer
     fetch('/api/generateEncounter/', {
         method: 'POST',
+        credentials: 'same-origin',
         headers: {
             'Content-Type': 'application/json',
             'X-CSRFToken': csrftoken || ''
