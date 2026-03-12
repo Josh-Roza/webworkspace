@@ -15,17 +15,20 @@ function switchToAdvanced() {
     document.getElementById("abundanceSlider").disabled = false;
     document.getElementById("meleeRangedSlider").disabled = false;
     document.getElementById("monsterPackDiv").disabled = false;
-    document.getElementById("bossFight").hidden = false;
-    document.getElementById("horde").hidden = false;
-    document.getElementById("ranged").hidden = false;
-    document.getElementById("melee").hidden = false;
-    document.getElementById("abundanceSlider").hidden = false;
-    document.getElementById("meleeRangedSlider").hidden = false;
-    document.getElementById("monsterPackDiv").hidden = false;
+    document.getElementById("bossFight").style.display = "block";
+    document.getElementById("horde").style.display = "block";
+    document.getElementById("ranged").style.display = "block";
+    document.getElementById("melee").style.display = "block";
+    document.getElementById("abundanceSlider").style.display = "";
+    document.getElementById("meleeRangedSlider").style.display = "";
+    document.getElementById("abundanceSliderDiv").style.display = "flex";
+    document.getElementById("rangeMeleeSliderDiv").style.display = "flex";
+    document.getElementById("monsterPackDiv").style.display = "flex";
     document.getElementById("Advanced").textContent = "Simple";
 }
 
 function switchToSimple() {
+    document.getElementById("advancedButtonDiv").disabled = true; //change later for advanced settings
     document.getElementById("bossFight").disabled = true;
     document.getElementById("horde").disabled = true;
     document.getElementById("ranged").disabled = true;
@@ -33,14 +36,16 @@ function switchToSimple() {
     document.getElementById("abundanceSlider").disabled = true;
     document.getElementById("meleeRangedSlider").disabled = true;
     document.getElementById("monsterPackDiv").disabled = true;
-    document.getElementById("bossFight").hidden = true;
-    document.getElementById("horde").hidden = true;
-    document.getElementById("ranged").hidden = true;
-    document.getElementById("melee").hidden = true;
-    document.getElementById("abundanceSlider").hidden = true;
-    document.getElementById("meleeRangedSlider").hidden = true;
-    document.getElementById("monsterPackDiv").hidden = true;
+    document.getElementById("advancedButtonDiv").style.display = "none"; //change later for advanced settings
+    document.getElementById("bossFight").style.display = "none";
+    document.getElementById("horde").style.display = "none";
+    document.getElementById("ranged").style.display = "none";
+    document.getElementById("melee").style.display = "none";
+    document.getElementById("abundanceSliderDiv").style.display = "none";
+    document.getElementById("rangeMeleeSliderDiv").style.display = "none";
+    document.getElementById("monsterPackDiv").style.display = "none";
     document.getElementById("Advanced").textContent = "Advanced";
+    console.log("yep")
 }
 
 function generateScenario() {

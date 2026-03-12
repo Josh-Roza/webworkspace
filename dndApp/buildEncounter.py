@@ -5,24 +5,17 @@ from django.db.models import IntegerField
 from django.db.models.functions import Cast
 import json
 
-playerNumber = 5
-partyLvl = 5
-scenarioDifficulty = "Medium"
-monsterPacks = ["goblinPack", "orcPack", "trollPack"]
-monsterAbundance = 6
-rangeMelee = 6
-
 def buildSimpleEncounter(playerNumber, partyLvl, scenarioDifficulty):
 
-    highCurve = [100,200,400,500,1100,1400,1700,2100,2600,3100,4100,4700,5400,6200,7800,9800,11700,14200,17200,22000]
-    medCurve = [75,150,225,375,750,1000,1300,1700,2000,2300,2900,3700,4200,4900,5400,6100,7200,8700,10700,13200]
-    lowCurve = [50,100,150,250,500,600,750,1000,1300,1600,1900,2200,2600,2900,3300,3800,4500,5000,5500,6400]
+    highCurve = [75,150,225,375,750,900,1100,1400,1600,1900,2400,3000,3400,3800,4300,4800,5900,6300,7300,8500]
+    medCurve = [50,100,150,250,500,600,750,900,1100,1200,1600,2000,2200,2500,2800,3200,4200,5200,5900,6700]
+    lowCurve = [25,50,75,125,250,300,350,450,550,600,800,1000,1100,1250,1400,1600,2000,2100,2400,2800]
 
     if scenarioDifficulty == "Easy":
         scenXP = playerNumber * lowCurve[partyLvl-1]
     elif scenarioDifficulty == "Medium":
         scenXP = playerNumber * medCurve[partyLvl-1]
-    elif scenarioDifficulty == "Lethal":
+    elif scenarioDifficulty == "Hard":
         scenXP = playerNumber * highCurve[partyLvl-1] * 1.5
     else:
         scenXP = playerNumber * highCurve[partyLvl-1]
@@ -38,8 +31,8 @@ def buildSimpleEncounter(playerNumber, partyLvl, scenarioDifficulty):
         .filter(xp_int__isnull=False, xp_int__gt=int(scenXP * 0.25), xp_int__lt=int(scenXP * 0.75))
     )
     if Selection.exists():
-        idx = random.randrange(Selection.count())
-        m = Selection[idx]
+        choice = random.randrange(Selection.count())
+        m = Selection[choice]
         selected.append(m)
         currentXP += int(getattr(m, 'xp_int', 0) or 0)
 
@@ -47,12 +40,12 @@ def buildSimpleEncounter(playerNumber, partyLvl, scenarioDifficulty):
         Selection = (
             Monster.objects
             .annotate(xp_int=Cast('XP', IntegerField()))
-            .filter(xp_int__isnull=False, xp_int__lt=scenXP, xp_int__gt=int(scenXP * 0.1))
+            .filter(xp_int__isnull=False, xp_int__lt=((scenXP - currentXP) * 1.25), xp_int__gt=int(scenXP * 0.1))
         )
         if not Selection.exists():
             break
-        idx = random.randrange(Selection.count())
-        m = Selection[idx]
+        choice = random.randrange(Selection.count())
+        m = Selection[choice]
         selected.append(m)
         currentXP += int(getattr(m, 'xp_int', 0) or 0)
 
