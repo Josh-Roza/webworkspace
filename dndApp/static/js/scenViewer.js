@@ -1,3 +1,4 @@
+//When the info is loaded retrieve the scenario data and call the summon function for all the monsters.
 document.addEventListener('DOMContentLoaded', () => {
   console.log('scenViewer.js loaded (DOMContentLoaded)');
 
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let monsterDiv = document.getElementById("monsterDiv");
 let monsterHealths = [];
 
+//When a button is clicked check if any health is less than or equal to 0, if so delete the correpsinding health bar
 function checkHealths(){
   for (let i = 0; i < monsterHealths.length; i++) {
     if (monsterHealths[i] <= 0) {
@@ -61,6 +63,7 @@ function checkHealths(){
   }
 }
 
+//make a div for the monster and add all the html elements with the attributes using innerHTML
 function summon(monster){
   const existingMonster = document.getElementById(monster.name);
   if (existingMonster) {
@@ -96,6 +99,7 @@ function summon(monster){
     }
 }
 
+//Create buttons to modify the health of each monster along with the monster health, add to the div with the descrition of that monster
 function createButtons(monster,div){
     monsterHealths.push(monster.HP);
     freshHealth = document.createElement("div");

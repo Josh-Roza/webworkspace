@@ -7,6 +7,7 @@ import json
 
 def buildSimpleEncounter(playerNumber, partyLvl, scenarioDifficulty):
 
+    #XP amounts per player for each difficulty
     highCurve = [75,150,225,375,750,900,1100,1400,1600,1900,2400,3000,3400,3800,4300,4800,5900,6300,7300,8500]
     medCurve = [50,100,150,250,500,600,750,900,1100,1200,1600,2000,2200,2500,2800,3200,4200,5200,5900,6700]
     lowCurve = [25,50,75,125,250,300,350,450,550,600,800,1000,1100,1250,1400,1600,2000,2100,2400,2800]
@@ -24,7 +25,7 @@ def buildSimpleEncounter(playerNumber, partyLvl, scenarioDifficulty):
 
     currentXP = 0
     selected = []
-
+#Adds one monster between 1/4 and 3/4 of the XP budget.
     Selection = (
         Monster.objects
         .annotate(xp_int=Cast('XP', IntegerField()))
@@ -36,6 +37,7 @@ def buildSimpleEncounter(playerNumber, partyLvl, scenarioDifficulty):
         selected.append(m)
         currentXP += int(getattr(m, 'xp_int', 0) or 0)
 
+#adds monsters until XP budget is full or slightly over
     while currentXP < scenXP:
         Selection = (
             Monster.objects
@@ -49,7 +51,8 @@ def buildSimpleEncounter(playerNumber, partyLvl, scenarioDifficulty):
         selected.append(m)
         currentXP += int(getattr(m, 'xp_int', 0) or 0)
 
-    # build serializable dicts
+
+    # build monster objects
     out = []
     for m in selected:
         xp_val = getattr(m, 'xp_int', None)

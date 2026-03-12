@@ -47,7 +47,7 @@ function switchToSimple() {
     document.getElementById("Advanced").textContent = "Advanced";
     console.log("yep")
 }
-
+//generate a scenario with the attributes from the website, then save the information in a json file.
 function generateScenario() {
     console.log("Generate Scenario button clicked");
     var playerNumber = document.getElementById("playerNumber").value;
@@ -106,7 +106,7 @@ function generateScenario() {
 }
 
 
-
+//The page starts with the simple settings
 switchToSimple();
 
 

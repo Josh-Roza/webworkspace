@@ -4,8 +4,10 @@ import sys
 from pathlib import Path
 import textwrap
 
+#how much text will go on each line
 textWidth = 60
 
+#make it so this file can be run as a module
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
@@ -16,7 +18,6 @@ try:
     import django
     django.setup()
 except Exception:
-    # If Django is already set up (e.g., running via manage.py shell), ignore.
     pass
 
 from dndApp.models import Monster
@@ -31,51 +32,37 @@ except NameError:
 
 MONSTERS_TXT_PATH = _SCRIPT_DIR / "monstersTest.txt"
 
+#Different attacks or attributes follow the patter . word. or . word word. use that to make each one it's own line.
 def seperateAttributes(string):
-    # Normalize short headings (one or two words) so they appear on their own line.
-    # 1) When a period precedes the heading: ". Word." or ". Word Word." -> ".\nWord.\n"
-    # 2) When a colon/newline precedes the heading (e.g. "Attributes:\nIllumination.") -> keep prefix, add trailing newline.
-    # 3) When a heading starts a line ("^Illumination.") ensure it ends with a newline after the period.
-    # Use function-based replacements to avoid backreference expansion issues.
-
-    # Normalize multiple spaces after a period to a single space (fix ".  Word" cases)
     string = re.sub(r"\.\s{2,}", ". ", string)
 
-    # 1) period-before pattern — place heading on its own line and add a blank line after it
     string = re.sub(r"\.\s+((?:\S+)(?:\s+\S+)?)\.", lambda m: ".\n\n" + m.group(1) + ".\n\n", string)
 
-    # 2) colon/newline before pattern — keep prefix, add blank line after heading
     string = re.sub(r"(\:\s*\n\s*)([A-Za-z]+(?:\s+[A-Za-z]+)?)\.", lambda m: m.group(1) + m.group(2) + ".\n\n", string)
 
-    # 3) heading at start of a line (ensure trailing blank line). Use multiline mode.
     string = re.sub(r"(?m)^(\s*)([A-Za-z]+(?:\s+[A-Za-z]+)?)\.(?=\s)", lambda m: m.group(1) + m.group(2) + ".\n\n", string)
 
-    # Remove any leading spaces at the start of lines introduced by replacements
     string = re.sub(r"(?m)\n[ \t]+", "\n", string)
 
-    # Collapse excessive blank lines to at most one blank line (i.e., two newlines)
     string = re.sub(r"\n{3,}", "\n\n", string)
 
     print(string)
     return string
 
-
+#Make it so that description paragraphs only have textwidth characters per line
 def wrap_paragraphs(text, width=textWidth):
-    # Split into paragraphs on blank lines, preserve simple 1-2 word headings
     parts = re.split(r"\n\s*\n", text.strip()) if text and text.strip() else []
     out = []
     for p in parts:
         s = p.strip()
-        # treat a short heading (one or two words + period) as a paragraph to keep
         if re.match(r'^[A-Za-z]+(?:\s+[A-Za-z]+)?\.$', s):
             out.append(s)
         elif s:
-            # collapse internal whitespace then wrap
             collapsed = ' '.join(s.split())
             out.append(textwrap.fill(collapsed, width=width))
-    # Join paragraphs with a single newline (no extra blank line)
     return "\n".join(out)
 
+#read monstersTest.txt and add all monsters with their respective abilites
 with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
     lines = monsters.readlines()
     newMonsters = []
@@ -177,9 +164,9 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
                     rangedAttack = True
 
         
-        # Ensure we don't create duplicates: remove any existing monsters with the same name,
-        # then create a fresh record. Use the original CR/XP strings to avoid int() errors.
+        #delete monsters with same name so there are no duplicates.
         Monster.objects.filter(name=name).delete()
+        #add monster to the database
         Monster.objects.create(
             name=name,
             HP=int(HP),
@@ -195,7 +182,7 @@ with MONSTERS_TXT_PATH.open("r", encoding="utf-8") as monsters:
             rangedAttack=rangedAttack,
             pack=pack,
         )
-
+        #end if you are at the end of the file
         if i + 2 >= len(lines):
             print('finished')
             break
