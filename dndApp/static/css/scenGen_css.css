@@ -90,7 +90,6 @@ select {
     padding-top: 2vh;
     padding-bottom:2vh;
 }
-
 .monsterLabel {
     margin-bottom: 5px;
 }
@@ -113,6 +112,61 @@ input[type=range] {
     accent-color:rgb(117, 45, 180);
     width: 50vw;
 }
+
+/* Search row: input and submit on one line */
+.search-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+#monsterSearch {
+    flex: 1 1 auto;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+#monsterSearchSubmit {
+    padding: 8px 12px;
+    font-size: 15px;
+}
+
+/* Ensure the results select displays below the row */
+#monsterResults {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Added monsters list */
+#addedMonsters {
+    margin-top: 8px;
+}
+.added-monster {
+    background: rgba(217,220,241,0.6);
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin: 6px 0;
+    display: inline-block;
+}
+.added-monster .remove-monster {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 3px 6px;
+    margin-left: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.inc-monster, .dec-monster {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 2px 6px;
+    margin-left: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 
 
 

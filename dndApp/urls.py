@@ -8,4 +8,5 @@ urlpatterns = [
     path("savedScenarios/", views.savedScenarios, name="savedScenarios"),
     path("popularScenarios/", views.popularScenarios, name="popularScenarios"),
     path("api/generateEncounter/", views.generateEncounter, name="generateEncounter"),
+    path("search/", views.search, name="search"),
 ]

@@ -63,6 +63,29 @@
               <option value="TPK">TPK</option>
           </select>
       </div>
+      <div id="monsterSearchDiv">
+        <form method="GET" action="{% url 'search' %}">
+            <div class="search-row">
+                <input type="text" id="monsterSearch" name="monsterSearch" placeholder="Add a Monster...">
+                <button type="submit" id="monsterSearchSubmit">Search</button>
+            </div>
+            <label for="monsterResults" class="visually-hidden">Search results</label>
+            <div class="results-row">
+                <select id="monsterResults" name="selected_monster">
+                    {% if matches %}
+                        {% for match in matches %}
+                            <option value="{{ match.id }}">{{ match.name }}{% if match.CR %} (CR: {{ match.CR }}){% endif %}</option>
+                        {% endfor %}
+                        <option value="">Select a monster</option>
+                    {% else %}
+                        <option value="">Monster Not Found</option>
+                    {% endif %}
+                </select>
+                <button type="button" id="addMonsterButton">Add Monster</button>
+            </div>
+            <div id="addedMonsters"></div>
+        </form>
+      </div>
       <div id="monsterPackDiv" class="monsterSelection">
           <label for="monsterPack" class="monsterLabel">Monster Pack(s), hold ctrl/cmd to Select Multiple</label>
           <select name="monsterPack", id="monsterPack", multiple size="13">

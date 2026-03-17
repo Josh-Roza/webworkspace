@@ -1,0 +1,11 @@
+source ~/miniconda3/bin/activate
+conda activate dj_web
+
+source env_webproject/bin/activate
+
+python manage.py flush
+python manage.py shell
+import runpy
+runpy.run_path("dndApp/monsterReaderTestStrings.py", run_name="__main__")
+exit()
+python manage.py runserver 0.0.0.0:8000

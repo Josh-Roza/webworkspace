@@ -6,6 +6,7 @@ from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.http import require_POST
 from django.shortcuts import render
 from dndApp import buildEncounter
+from dndApp.models import Monster
 
 def homePage(request):
     return redirect('scenGen')
@@ -42,14 +43,24 @@ def generateEncounter(request):
     playerNumber = data.get('playerNumber', 5)
     partyLvl = data.get('partyLvl', 5)
     difficulty = data.get('scenarioDifficulty', 'Medium')
+    # optional selected monsters from the client: list of {id, name, count}
+    selected_from_client = data.get('selectedMonsters')
 
     # buildSimpleEncounter returns a list of serializable dicts
     try:
-        monsters = buildEncounter.buildSimpleEncounter(playerNumber, partyLvl, difficulty)
+        monsters = buildEncounter.buildSimpleEncounter(playerNumber, partyLvl, difficulty, initial_selected=selected_from_client)
     except Exception as e:
         return HttpResponseBadRequest(f'Error building encounter: {e}')
 
     total_xp = sum((m.get('XP') or 0) for m in monsters)
     return JsonResponse({'monsters': monsters, 'total_xp': total_xp})
 
-    
+def search(request):
+    query = request.GET.get('monsterSearch')
+    if query:
+        matches = Monster.objects.filter(name__icontains=query)
+    else:
+        matches = Monster.objects.none()
+
+    return render(request, 'scenGen.html', {'matches': matches})
+
