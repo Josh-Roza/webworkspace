@@ -6,7 +6,7 @@ from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.http import require_POST
 from django.shortcuts import render
 from dndApp import buildEncounter
-from dndApp.models import Monster
+from dndApp.models import Monster, Scenario
 
 def homePage(request):
     return redirect('scenGen')
@@ -18,8 +18,28 @@ def scenGen(request):
 def scenViewer(request):
     return render(request, 'scenViewer.html')
 
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+
 def savedScenarios(request):
-    return render(request, 'savedScenarios.html')
+    # list saved scenarios ordered by newest with pagination
+    all_scenarios = Scenario.objects.order_by('-created_at')
+    paginator = Paginator(all_scenarios, 10)  # 10 per page
+    page = request.GET.get('page', 1)
+    try:
+        scenarios = paginator.page(page)
+    except PageNotAnInteger:
+        scenarios = paginator.page(1)
+    except EmptyPage:
+        scenarios = paginator.page(paginator.num_pages)
+    return render(request, 'savedScenarios.html', {'scenarios': scenarios, 'paginator': paginator})
+
+def savedScenarioDetail(request, scen_id):
+    try:
+        scen = Scenario.objects.get(id=scen_id)
+    except Scenario.DoesNotExist:
+        return HttpResponseBadRequest('Scenario not found')
+    return render(request, 'savedScenarioDetail.html', {'scenario': scen})
 
 def popularScenarios(request):
     return render(request, 'popularScenarios.html')
@@ -63,4 +83,34 @@ def search(request):
         matches = Monster.objects.none()
 
     return render(request, 'scenGen.html', {'matches': matches})
+
+def saveScen(request):
+    if request.method != 'POST':
+        return HttpResponseBadRequest('POST required')
+
+    try:
+        data = json.loads(request.body)
+    except Exception:
+        return HttpResponseBadRequest('Invalid JSON')
+
+    # Expect the full scenario payload (monsters, total_xp, etc.)
+    monsters = data.get('monsters', [])
+    total_xp = data.get('total_xp')
+    name = data.get('name') or ''
+
+    scen = Scenario.objects.create(name=name, XP=total_xp or None, data=data)
+
+    # link known Monster records by name (case-insensitive)
+    for m in monsters:
+        mname = (m.get('name') or '').strip()
+        if not mname:
+            continue
+        try:
+            mon = Monster.objects.filter(name__iexact=mname).first()
+            if mon:
+                scen.Monsters.add(mon)
+        except Exception:
+            continue
+
+    return JsonResponse({'status': 'ok', 'scenario_id': scen.id})
 

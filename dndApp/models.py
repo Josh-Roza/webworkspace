@@ -18,4 +18,10 @@ class Monster(models.Model):
     def __str__(self):
         return f'{self.name}, CR:{self.CR} XP: {self.XP}'
 
-
+class Scenario(models.Model):
+    name = models.CharField(max_length=200, blank=True)
+    CR = models.CharField(max_length=50, blank=True)
+    XP = models.IntegerField(null=True, blank=True)
+    Monsters = models.ManyToManyField(Monster, blank=True)
+    data = models.JSONField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)

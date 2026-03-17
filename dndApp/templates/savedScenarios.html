@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saved Scenarios</title>
-    <link rel="stylesheet" href="{% static 'css/savedScenarios.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/scenGen_css.css' %}" />
   </head>
   <body>
     <div class="content-wrapper">
@@ -15,6 +15,37 @@
         <a href="{% url 'popularScenarios' %}">Popular Scenarios</a>
         <hr>
       </div>
+
+      <main style="width:100%;max-width:900px;margin:12px auto;padding:12px;background: rgb(217, 220, 241);border-radius:6px;">
+        <h1>Saved Scenarios</h1>
+        {% if scenarios and scenarios.object_list %}
+          <div class="scenario-list">
+            {% for s in scenarios.object_list %}
+              <div class="scenario-item" style="padding:10px;border-bottom:1px solid rgba(0,0,0,0.06);display:flex;justify-content:space-between;align-items:center;">
+                <div>
+                  <div style="font-weight:600;color:rgb(117,45,180);">{{ s.name|default:'(untitled)' }}</div>
+                  <div style="font-size:13px;color:#555;">XP: {{ s.XP|default:'N/A' }} — Created: {{ s.created_at }}</div>
+                </div>
+                <div>
+                  <a class="button" href="{% url 'savedScenarioDetail' s.id %}" style="background-color:rgb(117,45,180);color:azure;padding:6px 12px;border-radius:4px;text-decoration:none;">View</a>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+          <nav class="pagination" aria-label="Saved scenarios pagination" style="margin-top:12px;display:flex;gap:8px;align-items:center;justify-content:center;">
+            {% if scenarios.has_previous %}
+              <a href="?page={{ scenarios.previous_page_number }}" class="button" style="padding:6px 10px;border-radius:4px;">Previous</a>
+            {% endif %}
+            <span>Page {{ scenarios.number }} of {{ scenarios.paginator.num_pages }}</span>
+            {% if scenarios.has_next %}
+              <a href="?page={{ scenarios.next_page_number }}" class="button" style="padding:6px 10px;border-radius:4px;">Next</a>
+            {% endif %}
+          </nav>
+        {% else %}
+          <p>No saved scenarios yet.</p>
+        {% endif %}
+      </main>
     </div>
   </body>
 </html>

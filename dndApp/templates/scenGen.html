@@ -9,10 +9,11 @@
   </head>
   <body>
     <div class="content-wrapper">
-      <div id="navHeader">
-        <a href="{% url 'scenGen' %}">Scenario Generator</a>
-        <hr>
-      </div>
+            <div id="navHeader">
+                <a href="{% url 'scenGen' %}">Scenario Generator</a>
+                <a href="{% url 'savedScenarios' %}">Saved Scenarios</a>
+                <hr>
+            </div>
       <div id="advancedButtonDiv">
           <button id="Advanced" onclick="advancedButtonClicked()">Advanced</button>
       </div>

@@ -10,6 +10,7 @@
   <body>
     <div id="navHeader">
         <a href="{% url 'scenGen' %}">Scenario Generator</a>
+        <a href="{% url 'savedScenarios' %}">Saved Scenarios</a>
         <hr>
       </div>
     <div id="monsters">
@@ -17,6 +18,70 @@
       </div>
     </div>
   {{ monsterList|json_script:"monsterData" }}
+  <div class="save-button-row">
+    <button id='saveScenButton' type="button" style="background-color:rgb(117,45,180);color:azure;padding:10px 30px;font-size:20px;border-radius:5px;border:none;cursor:pointer;">Save Scenario</button>
+  </div>
   <script src="{% static 'js/scenViewer.js' %}"></script>
+  <script>
+    // Diagnostic: log presence of button and handler after scripts load
+    try {
+      console.log('scenViewer: diagnostic inline script running');
+      const btn = document.getElementById('saveScenButton');
+      console.log('save button element:', btn);
+      console.log('window.saveScen type:', typeof window.saveScen);
+      // DO NOT attach another click handler here; the external script already attaches one.
+    } catch (e) { console.error('diagnostic script error', e); }
+  </script>
+  <script>
+    // Inline fallback saveScen if the external script failed to load
+    if (typeof window.saveScen !== 'function') {
+      window.saveScen = async function() {
+        try {
+          console.log('inline fallback saveScen invoked');
+          const raw = sessionStorage.getItem('lastScenario');
+          if (!raw) {
+            // small popup fallback
+            const el = document.createElement('p');
+            el.textContent = 'No scenario to save';
+            Object.assign(el.style, {position:'fixed',top:'1rem',right:'1rem',background:'rgba(117,45,180,0.95)',color:'white',padding:'8px 12px',borderRadius:'6px',zIndex:9999});
+            document.body.appendChild(el);
+            setTimeout(()=>el.remove(),2000);
+            return;
+          }
+          const payload = JSON.parse(raw);
+          const name = prompt('Save scenario as (optional name):', '');
+          if (name !== null) payload.name = name;
+          function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+          }
+          const csrftoken = getCookie('csrftoken') || '';
+          const resp = await fetch('/api/saveScenario/', {
+            method: 'POST',
+            headers: {'Content-Type':'application/json','X-CSRFToken':csrftoken},
+            body: JSON.stringify(payload),
+            credentials: 'same-origin'
+          });
+          if (!resp.ok) {
+            const txt = await resp.text();
+            alert('Save failed: '+resp.status+'\n'+txt);
+            return;
+          }
+          const data = await resp.json();
+          const el = document.createElement('p');
+          el.textContent = 'Scenario saved (id: '+data.scenario_id+')';
+          Object.assign(el.style, {position:'fixed',top:'1rem',right:'1rem',background:'rgba(117,45,180,0.95)',color:'white',padding:'8px 12px',borderRadius:'6px',zIndex:9999});
+          document.body.appendChild(el);
+          setTimeout(()=>el.remove(),2500);
+        } catch (e) {
+          console.error('inline saveScen error', e);
+          alert('Error saving scenario');
+        }
+      };
+      // attach to button if present
+      try { const b = document.getElementById('saveScenButton'); if (b) b.addEventListener('click', window.saveScen); } catch(e){}
+    }
+  </script>
   </body>
 </html>

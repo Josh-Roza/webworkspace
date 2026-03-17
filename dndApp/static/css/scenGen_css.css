@@ -138,6 +138,27 @@ input[type=range] {
     margin-top: 8px;
 }
 
+/* Constrain the overall search area so it doesn't span the whole page */
+#monsterSearchDiv {
+    max-width: 680px;
+    width: 100%;
+    margin: 0.5rem 0; /* small vertical spacing */
+}
+
+/* Make the results row layout compact */
+.results-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.results-row select#monsterResults {
+    flex: 1 1 auto;
+    min-width: 0; /* allow flexing inside constrained container */
+}
+.results-row button#addMonsterButton {
+    flex: 0 0 auto;
+}
+
 /* Added monsters list */
 #addedMonsters {
     margin-top: 8px;

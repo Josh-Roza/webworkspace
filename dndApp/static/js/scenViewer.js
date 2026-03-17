@@ -157,3 +157,97 @@ if (typeof window !== 'undefined') {
   window.monsterHealths = monsterHealths;
   window.summon = summon;
 }
+
+// Save scenario to server
+function saveScen() {
+  try {
+    console.log('saveScen invoked');
+    const raw = sessionStorage.getItem('lastScenario');
+    if (!raw) { showSaveMessage('No scenario to save'); console.warn('No scenario in sessionStorage'); return; }
+    const payload = JSON.parse(raw);
+    // optionally set a name
+    const name = prompt('Save scenario as (optional name):', '');
+    if (name !== null) payload.name = name;
+    console.log('Saving scenario payload', payload);
+
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+    const csrftoken = getCookie('csrftoken');
+
+    // provide immediate UI feedback and remove the save button so it can't be clicked again
+    const btn = document.getElementById('saveScenButton');
+    if (btn) { try { btn.disabled = true; btn.remove(); } catch(e) { console.warn('Could not remove save button', e); } }
+
+    fetch('/api/saveScenario/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-CSRFToken': csrftoken || '' },
+      body: JSON.stringify(payload),
+      credentials: 'same-origin'
+    }).then(async (resp) => {
+      if (!resp.ok) {
+        const text = await resp.text();
+        showSaveMessage('Save failed: ' + resp.status);
+        console.error('Save failed response', resp.status, text);
+        return;
+      }
+      const data = await resp.json();
+      // show inline save confirmation
+      showSaveMessage('Scenario saved (id: ' + data.scenario_id + ')');
+      // button removed after click
+    }).catch(err => {
+      console.error('Save error', err);
+      showSaveMessage('Error saving scenario');
+    });
+  } catch (e) {
+    console.error('SaveScen error', e);
+    alert('Error saving scenario');
+  }
+}
+
+// Attach handler to the button when DOM is ready
+document.addEventListener('DOMContentLoaded', function(){
+  try {
+    const btn = document.getElementById('saveScenButton');
+    if (btn) btn.addEventListener('click', saveScen);
+    // also expose for console if desired
+    window.saveScen = saveScen;
+  } catch (e) {
+    console.error('Failed to attach saveScen handler', e);
+  }
+});
+
+// show a temporary message near top-right when scenario is saved
+function showSaveMessage(msg) {
+  try {
+    let el = document.getElementById('saveScenMessage');
+    if (!el) {
+      el = document.createElement('p');
+      el.id = 'saveScenMessage';
+      el.setAttribute('role', 'status');
+      el.style.position = 'fixed';
+      el.style.top = '1rem';
+      el.style.right = '1rem';
+      el.style.background = 'rgba(117,45,180,0.95)';
+      el.style.color = 'white';
+      el.style.padding = '8px 12px';
+      el.style.borderRadius = '6px';
+      el.style.zIndex = 9999;
+      el.style.boxShadow = '0 6px 18px rgba(0,0,0,0.2)';
+      document.body.appendChild(el);
+    }
+    el.textContent = msg;
+    el.style.opacity = '1';
+    // clear any existing hide timeout
+    if (el._hideTimer) clearTimeout(el._hideTimer);
+    el._hideTimer = setTimeout(() => {
+      el.style.transition = 'opacity 400ms ease';
+      el.style.opacity = '0';
+      el._hideTimer = setTimeout(() => { try { el.remove(); } catch(e){} }, 450);
+    }, 3000);
+  } catch (e) {
+    console.error('showSaveMessage error', e);
+  }
+}

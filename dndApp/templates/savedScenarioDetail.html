@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saved Scenario Detail</title>
+  <link rel="stylesheet" href="{% static 'css/scenViewer_css.css' %}" />
+</head>
+<body>
+  <div id="navHeader">
+    <a href="{% url 'scenGen' %}">Scenario Generator</a>
+    <a href="{% url 'savedScenarios' %}">Saved Scenarios</a>
+    <hr>
+  </div>
+  <div class="content-wrapper" style="padding:12px;">
+    <h1>{{ scenario.name|default:'(untitled)' }}</h1>
+    <p>XP: {{ scenario.XP|default:'N/A' }} — Created: {{ scenario.created_at }}</p>
+
+    <h2>Monsters</h2>
+    {% if scenario.data.monsters %}
+      <ul>
+        {% for m in scenario.data.monsters %}
+          <li>{{ m.name }} — HP: {{ m.HP }} — AC: {{ m.AC }} — XP: {{ m.XP }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No monster data available.</p>
+    {% endif %}
+
+    <button id="openInViewer">Open in Viewer</button>
+  </div>
+  {{ scenario.data|json_script:"scenarioData" }}
+  <script>
+    // Put the scenario JSON into sessionStorage and navigate to scenViewer
+    document.getElementById('openInViewer').addEventListener('click', function(){
+      try {
+        const data = JSON.parse(document.getElementById('scenarioData').textContent || '{}');
+        sessionStorage.setItem('lastScenario', JSON.stringify(data));
+        window.location.href = '{% url "scenViewer" %}';
+      } catch(e) {
+        alert('Failed to open scenario: '+e);
+      }
+    });
+  </script>
+</body>
+</html>

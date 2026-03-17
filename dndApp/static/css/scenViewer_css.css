@@ -125,3 +125,38 @@ button:hover {
     display: flex;
     flex-direction: row;
 }
+
+/* Make the Save Scenario button match the Generate button sizing and spacing */
+#saveScenButton {
+    background-color: rgb(117, 45, 180);
+    color: azure;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.08);
+    display: inline-block;
+    width: auto;
+    margin: 8px 0;
+}
+/* Hover to match scenGen hover color */
+#saveScenButton:hover {
+    background-color: rgba(73, 23, 117, 0.8);
+}
+
+/* Stronger rule to override other button defaults and ensure visual match */
+.save-button-row > button#saveScenButton {
+    background-color: rgb(117, 45, 180) !important;
+    color: azure !important;
+    padding: 10px 30px !important;
+    font-size: 20px !important;
+    border-radius: 5px !important;
+}
+
+/* Keep the save button from stretching full width when inside wide containers */
+.save-button-row {
+    max-width: 680px;
+    width: 100%;
+    margin: 0.5rem 0;
+}
