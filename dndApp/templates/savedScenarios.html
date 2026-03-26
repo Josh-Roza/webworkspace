@@ -18,6 +18,22 @@
 
       <main style="width:100%;max-width:900px;margin:12px auto;padding:12px;background: rgb(217, 220, 241);border-radius:6px;">
         <h1>Saved Scenarios</h1>
+
+        <form method="get" action="" style="margin:10px 0 14px;display:flex;gap:8px;align-items:center;">
+          <input
+            type="search"
+            name="q"
+            value="{{ q|default:'' }}"
+            placeholder="Search saved scenarios..."
+            aria-label="Search saved scenarios"
+            style="flex:1;min-width:180px;padding:8px 10px;border-radius:4px;border:1px solid rgba(0,0,0,0.15);"
+          />
+          <button type="submit" class="button" style="background-color:rgb(117,45,180);color:azure;padding:8px 12px;border-radius:4px;border:none;cursor:pointer;">Search</button>
+          {% if q %}
+            <a href="?" class="button" style="padding:8px 12px;border-radius:4px;text-decoration:none;">Clear</a>
+          {% endif %}
+        </form>
+
         {% if scenarios and scenarios.object_list %}
           <div class="scenario-list">
             {% for s in scenarios.object_list %}
@@ -35,15 +51,19 @@
 
           <nav class="pagination" aria-label="Saved scenarios pagination" style="margin-top:12px;display:flex;gap:8px;align-items:center;justify-content:center;">
             {% if scenarios.has_previous %}
-              <a href="?page={{ scenarios.previous_page_number }}" class="button" style="padding:6px 10px;border-radius:4px;">Previous</a>
+              <a href="?page={{ scenarios.previous_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}" class="button" style="padding:6px 10px;border-radius:4px;">Previous</a>
             {% endif %}
             <span>Page {{ scenarios.number }} of {{ scenarios.paginator.num_pages }}</span>
             {% if scenarios.has_next %}
-              <a href="?page={{ scenarios.next_page_number }}" class="button" style="padding:6px 10px;border-radius:4px;">Next</a>
+              <a href="?page={{ scenarios.next_page_number }}{% if q %}&q={{ q|urlencode }}{% endif %}" class="button" style="padding:6px 10px;border-radius:4px;">Next</a>
             {% endif %}
           </nav>
         {% else %}
-          <p>No saved scenarios yet.</p>
+          {% if q %}
+            <p>No saved scenarios match "{{ q }}".</p>
+          {% else %}
+            <p>No saved scenarios yet.</p>
+          {% endif %}
         {% endif %}
       </main>
     </div>

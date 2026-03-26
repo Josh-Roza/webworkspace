@@ -5,6 +5,7 @@ import json
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.http import require_POST
 from django.shortcuts import render
+from django.db.models import Q
 from dndApp import buildEncounter
 from dndApp.models import Monster, Scenario
 
@@ -23,7 +24,15 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def savedScenarios(request):
     # list saved scenarios ordered by newest with pagination
+    query = (request.GET.get('q') or '').strip()
+
     all_scenarios = Scenario.objects.order_by('-created_at')
+    if query:
+        filters = Q(name__icontains=query)
+        if query.isdigit():
+            filters = filters | Q(id=int(query))
+        all_scenarios = all_scenarios.filter(filters)
+
     paginator = Paginator(all_scenarios, 10)  # 10 per page
     page = request.GET.get('page', 1)
     try:
@@ -32,7 +41,15 @@ def savedScenarios(request):
         scenarios = paginator.page(1)
     except EmptyPage:
         scenarios = paginator.page(paginator.num_pages)
-    return render(request, 'savedScenarios.html', {'scenarios': scenarios, 'paginator': paginator})
+    return render(
+        request,
+        'savedScenarios.html',
+        {
+            'scenarios': scenarios,
+            'paginator': paginator,
+            'q': query,
+        },
+    )
 
 def savedScenarioDetail(request, scen_id):
     try:
