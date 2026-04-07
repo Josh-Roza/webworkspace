@@ -30,7 +30,7 @@ except NameError:
     cwd = Path.cwd()
     _SCRIPT_DIR = cwd / "dndApp" if (cwd / "dndApp").is_dir() else cwd
 
-MONSTERS_TXT_PATH = _SCRIPT_DIR / "monstersTest.txt"
+MONSTERS_TXT_PATH = _SCRIPT_DIR / "monstersCleaned.txt"
 
 #Different attacks or attributes follow the patter . word. or . word word. use that to make each one it's own line.
 def seperateAttributes(string):
